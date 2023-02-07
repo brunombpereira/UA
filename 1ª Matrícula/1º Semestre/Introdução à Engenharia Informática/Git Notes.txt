@@ -1,0 +1,11 @@
+git status -- ver os ficheiros alterados
+git add -- adicionar/ fazer stagged dos ficheiros alterados i.e git add . (adiciona todos os ficjeioros)
+git commit -- fazer commit
+git push -- fazer upload do repo
+git pull -- fazer download do repo
+git log -- ver os commits do repo
+git checkout -- ir para a versão escolhida
+git checkout -b some -- cria o branch some e faz checkout para o mesmo
+git branch some -- cria branch
+git branch -d -- elimina branch
+git stash -- descartar alterações

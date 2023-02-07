@@ -1,0 +1,17 @@
+|MEF
+Y <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+RESET_H => inst.ACLR
+RESET_H => inst1.ACLR
+RESET_H => inst7.IN0
+CK => inst.CLK
+CK => inst1.CLK
+X => inst5.IN0
+X => inst16.IN2
+X => inst11.IN0
+X => inst2.IN0
+X => inst15.IN1
+Q[0] <= inst6[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst6[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst6[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

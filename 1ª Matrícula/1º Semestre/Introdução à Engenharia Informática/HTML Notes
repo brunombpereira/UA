@@ -1,0 +1,105 @@
+--> html é só o esqueleto/estrutura do site
+
+html : 5 --> Estrutura base de um ficheiro html
+
+--> <meta name="description" content="aqui escreve-se uma muito breve descrição do que é o site">
+
+--> <meta name="keywords" content="aqui escreve-se palavras chaves para facilitar a procura de conteúdo">
+
+--> <meta name="author" content="aqui escreve-se o autor do site"
+
+<h1></h1> --> Aqui escreve-se o título principal da página (só se usa uma vez)
+
+<h2></h2>; <h3></h3>; <h4></h4>; <h5></h5>; <h6></h6> --> subtítulos (tamanho vai diminuindo do <h2></h2> para o <h6></h6>)
+
+<p></p> --> parágrafo
+
+<hr> --> linha divisória horizontal (ex: criar espaços/secções)
+
+<b></b> --> Negrito
+
+<strong></strong> --> Negrito (ênfase)
+
+<i></i> --> Itálico
+
+<br></br> --> pular uma linha (quebra de linha)
+
+<small></small> --> torna o texto pequeno
+
+<del></del> --> cria uma linha em cima do texto selecionado como se o texto estivesse cortado
+
+<sup></sup> --> põe o texto selecionado em cima, numa estrutura como a de um número exponencial, tipo 2^10
+
+<sub></sub> --> contrário de <sup></sup>
+
+<mark></mark> --> sublinha o texto selecionado (destaca o texto)
+
+<u></u> --> sublinha o texto (cria uma linha de baixo do texto selecionado)
+
+<abbr></abbr> --> tag para abreviações
+
+<abbr title=""></abbr> --> a propriedade title="" é onde se escreve o significado da abreviação
+
+<address></address> --> endereço
+
+<cite></cite> --> citar algo(ex: nome de uma obra; filme; ...)
+
+<q></q> --> citar algo que alguém disse
+
+<!--vjdclv--> --> comentário
+
+<a href=""></a> --> link/hiperligação na mesma página - chamado de link absoluto pu URL absoluta
+
+<a href="" target="_blank"></a> --> link/hiperligação para outra página - chamado de link absoluto pu URL absoluta
+
+link relativo --> o mesmo q um link absoluto mas redireciona para uma página que está no mesmo diretório ou numa pasta dentro do diretório em q a página web foi criada
+
+<img src="" width="" height="" alt=""> --> imagem
+
+<table width="" border="" style="text-align: center;"><tr><th></th></tr></table> --> para criar uma tabela
+
+<tr></tr> --> cria uma linha na tabela
+
+<th></th> --> cria uma coluna - é só usado uma vez na primeira linha
+
+<td></td> --> informações para pôr na tabela
+
+<ul><li></li></ul> --> lista não ordenada, pq não tem uma sequência de números
+
+<li></li> --> list item
+
+<ol><li></li></ol> --> lista ordenada - faz uma contagem de forma sequencial
+
+<iframe style="" src="" width="" height="" title=""></iframe> --> pôr um site/documento dentro do site
+
+<form action="" method=""></form> --> para criar um formulário
+
+<input id="" type="" name="" value="" placeholder= "" required> --> para receber informação escrita do usuário
+
+<label for=""></label> --> legenda
+
+<select name=""><option selected disabled value=""></option></select> --> escolher uma das opções (combobox)
+
+<textarea required name="" placeholder="" rows="" cols=""></textarea> --> uma caixa para escrever texto
+
+<button></button> --> cria um botão
+
+&nbsp; --> espaço vazio
+
+<audio controls controlsLists=""><source src="" type=""></audio> --> audio
+
+<video poster="" width="" height="" autoplay controls disablepictureinpicture controlsList=""><source scr="" type=""></video>
+
+<div class=""></div> --> serve para colocar qualquer tipo de atributo para definir um layout do site
+
+<style></style> --> estilo
+
+<header class=""></header> --> tag semântica para topo
+
+<nav></nav> --> tag semântica para menu
+
+<section></section> --> tag semântica para secções
+
+--> As tags semânticas ajudam os navegadores a entender o código
+
+<footer></footer> --> tag semântica para rodapé

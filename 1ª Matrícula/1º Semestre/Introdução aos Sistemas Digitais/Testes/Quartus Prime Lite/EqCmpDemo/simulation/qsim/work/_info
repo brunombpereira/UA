@@ -1,0 +1,150 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Bruno/Desktop/Quartus Prime Lite/EqCmpDemo/simulation/qsim
+Eeqcmpdemo
+Z1 w1669150507
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
+!i122 0
+R0
+Z8 8EqCmpDemo.vho
+Z9 FEqCmpDemo.vho
+l0
+L35 1
+VzI]9i`:8GA]R2D2D:BDIF2
+!s100 RbTV4?V;M?dETl?d@kZbY3
+Z10 OV;C;2020.1;71
+32
+Z11 !s110 1669150508
+!i10b 1
+Z12 !s108 1669150507.000000
+Z13 !s90 -work|work|EqCmpDemo.vho|
+Z14 !s107 EqCmpDemo.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 9 eqcmpdemo 0 22 zI]9i`:8GA]R2D2D:BDIF2
+!i122 0
+l69
+L43 174
+VBVcQoBEOdd[8OQ<D6R3K91
+!s100 Fh4kzbDbRl:96;I28aXTB1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+vEqCmpDemo
+Z17 !s110 1669150529
+!i10b 1
+!s100 YXgE>[:538II2@ZFXK3[93
+Z18 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I^14fCZzgE]zDaF67Ma:[F1
+Z19 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1669150528
+8EqCmpDemo.vo
+FEqCmpDemo.vo
+!i122 2
+L0 32 168
+Z20 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z21 !s108 1669150529.000000
+!s107 EqCmpDemo.vo|
+!s90 -work|work|EqCmpDemo.vo|
+!i113 1
+R15
+Z22 tCvgOpt 0
+n@eq@cmp@demo
+Eeqcmpdemo_vhd_vec_tst
+Z23 w1669150506
+R5
+R6
+!i122 1
+R0
+Z24 8EqCmpDemo.vwf.vht
+Z25 FEqCmpDemo.vwf.vht
+l0
+L32 1
+Vb:JYio=d0EkMR9d]fR]j>0
+!s100 EAzGZnge^cK[[`MOG6]P?1
+R10
+32
+R11
+!i10b 1
+Z26 !s108 1669150508.000000
+Z27 !s90 -work|work|EqCmpDemo.vwf.vht|
+Z28 !s107 EqCmpDemo.vwf.vht|
+!i113 1
+R15
+R16
+Aeqcmpdemo_arch
+R5
+R6
+DEx4 work 21 eqcmpdemo_vhd_vec_tst 0 22 b:JYio=d0EkMR9d]fR]j>0
+!i122 1
+l47
+L34 1658
+Vaa;3SzEgCBiT4jGVYKCUh2
+!s100 nnW;VThF[E8K?M0HmCZFP0
+R10
+32
+R11
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R15
+R16
+vEqCmpDemo_vlg_vec_tst
+R17
+!i10b 1
+!s100 a]46dKY9@SLI_Gzg@kH;d0
+R18
+Ih:4D4GES05j^;llZh=]FX1
+R19
+R0
+w1669150527
+8EqCmpDemo.vwf.vt
+FEqCmpDemo.vwf.vt
+!i122 3
+L0 30 854
+R20
+r1
+!s85 0
+31
+R21
+!s107 EqCmpDemo.vwf.vt|
+!s90 -work|work|EqCmpDemo.vwf.vt|
+!i113 1
+R15
+R22
+n@eq@cmp@demo_vlg_vec_tst

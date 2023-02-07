@@ -1,0 +1,41 @@
+--> Deve-se criar um ficheiro do tipo .css onde se vai encontrar os vários estilos q se pretende usar
+
+--> Dentro do ficheiro com extensão .css, para criar um estilo:
+	--> tag_name{} - onde tag_name é o nome da tag à qual se quer aplicar o estilo
+		       - dentro das {} escrevem-se as propriedades/atributos
+		       
+	--> .class_name{} - onde class_name é o nome cujo qual vai ser referido na tag (ex: <h2 class_name></h2>
+			  - dentro das {} escrevem-se as propriedades/atributos
+			  
+	--> *{} - onde o * refere-se a todas as tags
+		- dentro das {} escrevem-se as propriedades/atributos
+		
+		
+Propriedades (sempre se utiliza ; no final):
+	--> color: color_name/hex_code/rgb_code; - color é a propriedade que define a cor do texto
+	
+	--> background-color: color_name/hex_code/rgb_code; - background-color é a propriedade que define a cor do fundo
+	
+	--> background-image: url(""); - background-image é a propriedade que define o fundo com uma imagem
+				      - dentro da url("") escreve-se o caminho onde a imagem se encontra
+				      - caso o ficheiro do tipo .css se encontre dentro de uma pasta e a imagem esteja noutra pasta ou fora da pasta dentro da url("") escreve-se .. para sair da pasta em q se está e dps escreve-se ent o caminho até ao sítio onde a imagem se encontra
+				      
+	--> height:  px; - height é a propriedade que define a altura do elemento em pixeis (px)
+			 - utiliza-se um valor numérico para definir a altura
+			 
+	--> background-size: ; - background-size é a propriedade que define o tamanho da imagem de fundo
+			       --> cover; - adapta a imagem ao tamanho do background
+			       --> contain; - caso a imagem quando contida não ocupe a área toda do bakcground esta repete-se até preencher
+			       --> background-repeat: no-repeat; - esta propriedade faz com que quando a uso do atributo contain a imagem não se repita ficando o background com a cor definida para esse mesmo   
+			       --> background.repeat: repeat-x; - esta propriedade faz com que quando a uso do atributo contain a imagem se repita na horizontal (eixo x)
+			       --> background.repeat: repeat-y; - esta propriedade faz com que quando a uso do atributo contain a imagem se repita na vertical (eixo y)
+			       
+	--> background-position: ; - define a posição da imagem no background
+	
+	--> border; ; - cria uma borda à volta do elemento selecionado
+		      - pode-se definir o tamanho da borda; o tipo de borda; a cor da borda e o sítio dela (só na direita; só em cima; ...)
+		      --> borfer-radious: px; - arredonda a borda
+		      
+	--> text-align: ; - define qual a posição do elemento (à direita, ao centro ou à esquerda)
+	
+			  	

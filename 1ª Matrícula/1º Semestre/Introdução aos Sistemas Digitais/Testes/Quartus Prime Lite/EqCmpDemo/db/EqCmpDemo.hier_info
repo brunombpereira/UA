@@ -1,0 +1,12 @@
+|EqCmpDemo
+cmpOut <= and_1.DB_MAX_OUTPUT_PORT_TYPE
+input1[0] => inst3.IN0
+input1[1] => inst2.IN0
+input1[2] => inst1.IN0
+input1[3] => inst.IN0
+input0[0] => inst3.IN1
+input0[1] => inst2.IN1
+input0[2] => inst1.IN1
+input0[3] => inst.IN1
+
+

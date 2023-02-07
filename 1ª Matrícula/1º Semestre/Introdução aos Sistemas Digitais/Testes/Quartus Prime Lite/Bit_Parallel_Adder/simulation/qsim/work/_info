@@ -1,0 +1,150 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Bruno/Desktop/Quartus Prime Lite/Bit_Parallel_Adder/simulation/qsim
+Ebit_parallel_adder
+Z1 w1669757098
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
+!i122 0
+R0
+Z8 8Bit_Parallel_Adder.vho
+Z9 FBit_Parallel_Adder.vho
+l0
+L35 1
+VH6fI`mVa?U09_FkdJdOfD2
+!s100 ]NNS;7h1]H0mL>UW`9b9j2
+Z10 OV;C;2020.1;71
+32
+Z11 !s110 1669757099
+!i10b 1
+Z12 !s108 1669757099.000000
+Z13 !s90 -work|work|Bit_Parallel_Adder.vho|
+Z14 !s107 Bit_Parallel_Adder.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 18 bit_parallel_adder 0 22 H6fI`mVa?U09_FkdJdOfD2
+!i122 0
+l101
+L54 342
+V>E>Im;D@QY_[4jklH7>ij2
+!s100 X[3@N[gg;S24FHDG4KiC;2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+vBit_Parallel_Adder
+Z17 !s110 1669800300
+!i10b 1
+!s100 jLMBE5<@922l0<VG1log03
+Z18 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I>lXFR5Ldn6nF76bOHO9WY0
+Z19 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1669800299
+8Bit_Parallel_Adder.vo
+FBit_Parallel_Adder.vo
+!i122 4
+L0 32 345
+Z20 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z21 !s108 1669800300.000000
+!s107 Bit_Parallel_Adder.vo|
+!s90 -work|work|Bit_Parallel_Adder.vo|
+!i113 1
+R15
+Z22 tCvgOpt 0
+n@bit_@parallel_@adder
+Ebit_parallel_adder_vhd_vec_tst
+R1
+R5
+R6
+!i122 1
+R0
+Z23 8Bit_Parallel_Adder.vwf.vht
+Z24 FBit_Parallel_Adder.vwf.vht
+l0
+L32 1
+V44e`>K>84QLk[7XA1f@`M2
+!s100 8CbhP[Z6UaHKoo<S?B3z`3
+R10
+32
+R11
+!i10b 1
+R12
+Z25 !s90 -work|work|Bit_Parallel_Adder.vwf.vht|
+Z26 !s107 Bit_Parallel_Adder.vwf.vht|
+!i113 1
+R15
+R16
+Abit_parallel_adder_arch
+R5
+R6
+DEx4 work 30 bit_parallel_adder_vhd_vec_tst 0 22 44e`>K>84QLk[7XA1f@`M2
+!i122 1
+l69
+L34 182
+VHm`[NS?fkNEkkh8O>c2>N3
+!s100 z@QHah9hL=U@;oi?m^Z5S2
+R10
+32
+R11
+!i10b 1
+R12
+R25
+R26
+!i113 1
+R15
+R16
+vBit_Parallel_Adder_vlg_vec_tst
+R17
+!i10b 1
+!s100 RI1P`oPfmOTo=0`T]5^4L0
+R18
+IzhmDJhO:fU[<:JAY1:@cK0
+R19
+R0
+w1669800298
+8Bit_Parallel_Adder.vwf.vt
+FBit_Parallel_Adder.vwf.vt
+!i122 5
+L0 30 128
+R20
+r1
+!s85 0
+31
+R21
+!s107 Bit_Parallel_Adder.vwf.vt|
+!s90 -work|work|Bit_Parallel_Adder.vwf.vt|
+!i113 1
+R15
+R22
+n@bit_@parallel_@adder_vlg_vec_tst

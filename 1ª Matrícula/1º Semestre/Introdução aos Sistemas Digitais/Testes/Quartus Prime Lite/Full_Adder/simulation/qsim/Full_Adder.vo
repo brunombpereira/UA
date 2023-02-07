@@ -1,0 +1,151 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+
+// DATE "11/28/2022 13:54:31"
+
+// 
+// Device: Altera EP4CE6E22C6 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Full_Adder (
+	Sum,
+	A,
+	B,
+	Ci,
+	Carry);
+output 	Sum;
+input 	A;
+input 	B;
+input 	Ci;
+output 	Carry;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \Sum~output_o ;
+wire \Carry~output_o ;
+wire \A~input_o ;
+wire \B~input_o ;
+wire \Ci~input_o ;
+wire \XOR2~0_combout ;
+wire \OR2_2~0_combout ;
+
+
+cycloneive_io_obuf \Sum~output (
+	.i(\XOR2~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Sum~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Sum~output .bus_hold = "false";
+defparam \Sum~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \Carry~output (
+	.i(\OR2_2~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Carry~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Carry~output .bus_hold = "false";
+defparam \Carry~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_ibuf \A~input (
+	.i(A),
+	.ibar(gnd),
+	.o(\A~input_o ));
+// synopsys translate_off
+defparam \A~input .bus_hold = "false";
+defparam \A~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \B~input (
+	.i(B),
+	.ibar(gnd),
+	.o(\B~input_o ));
+// synopsys translate_off
+defparam \B~input .bus_hold = "false";
+defparam \B~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \Ci~input (
+	.i(Ci),
+	.ibar(gnd),
+	.o(\Ci~input_o ));
+// synopsys translate_off
+defparam \Ci~input .bus_hold = "false";
+defparam \Ci~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \XOR2~0 (
+// Equation(s):
+// \XOR2~0_combout  = \A~input_o  $ (\B~input_o  $ (\Ci~input_o ))
+
+	.dataa(\A~input_o ),
+	.datab(\B~input_o ),
+	.datac(\Ci~input_o ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\XOR2~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \XOR2~0 .lut_mask = 16'h9696;
+defparam \XOR2~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_lcell_comb \OR2_2~0 (
+// Equation(s):
+// \OR2_2~0_combout  = (\A~input_o  & ((\B~input_o ) # (\Ci~input_o ))) # (!\A~input_o  & (\B~input_o  & \Ci~input_o ))
+
+	.dataa(\A~input_o ),
+	.datab(\B~input_o ),
+	.datac(\Ci~input_o ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\OR2_2~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \OR2_2~0 .lut_mask = 16'hE8E8;
+defparam \OR2_2~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign Sum = \Sum~output_o ;
+
+assign Carry = \Carry~output_o ;
+
+endmodule

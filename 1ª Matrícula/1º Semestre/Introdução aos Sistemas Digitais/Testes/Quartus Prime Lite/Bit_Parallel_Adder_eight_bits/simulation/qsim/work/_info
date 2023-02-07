@@ -1,0 +1,150 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Bruno/Desktop/Quartus Prime Lite/Bit_Parallel_Adder_eight_bits/simulation/qsim
+Ebit_parallel_adder_eight_bits
+Z1 w1669757723
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
+!i122 0
+R0
+Z8 8Bit_Parallel_Adder_eight_bits.vho
+Z9 FBit_Parallel_Adder_eight_bits.vho
+l0
+L35 1
+VcIZ2OQI@HA0>[eiT;i`<A0
+!s100 EU6UZWTGECiid8ON[n_T_2
+Z10 OV;C;2020.1;71
+32
+Z11 !s110 1669757724
+!i10b 1
+Z12 !s108 1669757724.000000
+Z13 !s90 -work|work|Bit_Parallel_Adder_eight_bits.vho|
+Z14 !s107 Bit_Parallel_Adder_eight_bits.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 29 bit_parallel_adder_eight_bits 0 22 cIZ2OQI@HA0>[eiT;i`<A0
+!i122 0
+l145
+L66 638
+Vda;Lhh0n^oIN`iC?L=QSH2
+!s100 [bO_P3Vk<3`o9iNXYDJ5M1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+vBit_Parallel_Adder_eight_bits
+Z17 !s110 1669757737
+!i10b 1
+!s100 dcQ?N7ZOhoA^3PCYHfb382
+Z18 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ICL]7QX?;Az0Hl2RUc`FbR1
+Z19 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z20 w1669757736
+8Bit_Parallel_Adder_eight_bits.vo
+FBit_Parallel_Adder_eight_bits.vo
+!i122 2
+L0 32 645
+Z21 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z22 !s108 1669757737.000000
+!s107 Bit_Parallel_Adder_eight_bits.vo|
+!s90 -work|work|Bit_Parallel_Adder_eight_bits.vo|
+!i113 1
+R15
+Z23 tCvgOpt 0
+n@bit_@parallel_@adder_eight_bits
+Ebit_parallel_adder_eight_bits_vhd_vec_tst
+R1
+R5
+R6
+!i122 1
+R0
+Z24 8Bit_Parallel_Adder_eight_bits.vwf.vht
+Z25 FBit_Parallel_Adder_eight_bits.vwf.vht
+l0
+L32 1
+V2OCP?55`0l_[;F[j=e`6Z2
+!s100 N^3bjOPGGnnHKWN78c<on1
+R10
+32
+R11
+!i10b 1
+R12
+Z26 !s90 -work|work|Bit_Parallel_Adder_eight_bits.vwf.vht|
+Z27 !s107 Bit_Parallel_Adder_eight_bits.vwf.vht|
+!i113 1
+R15
+R16
+Abit_parallel_adder_eight_bits_arch
+R5
+R6
+DEx4 work 41 bit_parallel_adder_eight_bits_vhd_vec_tst 0 22 2OCP?55`0l_[;F[j=e`6Z2
+!i122 1
+l93
+L34 358
+VDPGnSo6AhUF>aPPjV=c060
+!s100 `D9]@NLjUfNOk<J;[JzjX3
+R10
+32
+R11
+!i10b 1
+R12
+R26
+R27
+!i113 1
+R15
+R16
+vBit_Parallel_Adder_eight_bits_vlg_vec_tst
+R17
+!i10b 1
+!s100 D?MA_KH>lmK9^T25@ojM50
+R18
+I_bmL0:dGLcHMc=4h@Fn=z2
+R19
+R0
+R20
+8Bit_Parallel_Adder_eight_bits.vwf.vt
+FBit_Parallel_Adder_eight_bits.vwf.vt
+!i122 3
+L0 30 242
+R21
+r1
+!s85 0
+31
+R22
+!s107 Bit_Parallel_Adder_eight_bits.vwf.vt|
+!s90 -work|work|Bit_Parallel_Adder_eight_bits.vwf.vt|
+!i113 1
+R15
+R23
+n@bit_@parallel_@adder_eight_bits_vlg_vec_tst

@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Bruno/Desktop/Quartus Prime Lite/Two_Bit_Multiplier/Two_Bit_Multiplier.bdf
+source_file = 1, C:/Users/Bruno/Desktop/Quartus Prime Lite/Two_Bit_Multiplier/db/Two_Bit_Multiplier.cbx.xml
+design_name = Two_Bit_Multiplier
+instance = comp, \p0~output , p0~output, Two_Bit_Multiplier, 1
+instance = comp, \P1~output , P1~output, Two_Bit_Multiplier, 1
+instance = comp, \P2~output , P2~output, Two_Bit_Multiplier, 1
+instance = comp, \P3~output , P3~output, Two_Bit_Multiplier, 1
+instance = comp, \A0~input , A0~input, Two_Bit_Multiplier, 1
+instance = comp, \B0~input , B0~input, Two_Bit_Multiplier, 1
+instance = comp, \A1~input , A1~input, Two_Bit_Multiplier, 1
+instance = comp, \A0_1~input , A0_1~input, Two_Bit_Multiplier, 1
+instance = comp, \B1~input , B1~input, Two_Bit_Multiplier, 1
+instance = comp, \B0_1~input , B0_1~input, Two_Bit_Multiplier, 1
+instance = comp, \A1_1~input , A1_1~input, Two_Bit_Multiplier, 1
+instance = comp, \B1_1~input , B1_1~input, Two_Bit_Multiplier, 1

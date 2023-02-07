@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Bruno/Desktop/Quartus Prime Lite/Full_Subtractor/Full_Subtractor.bdf
+source_file = 1, C:/Users/Bruno/Desktop/Quartus Prime Lite/Full_Subtractor/db/Full_Subtractor.cbx.xml
+design_name = Full_Subtractor
+instance = comp, \D~output , D~output, Full_Subtractor, 1
+instance = comp, \B0~output , B0~output, Full_Subtractor, 1
+instance = comp, \A~input , A~input, Full_Subtractor, 1
+instance = comp, \B~input , B~input, Full_Subtractor, 1
+instance = comp, \C~input , C~input, Full_Subtractor, 1
+instance = comp, \inst1~0 , inst1~0, Full_Subtractor, 1
+instance = comp, \inst6~0 , inst6~0, Full_Subtractor, 1

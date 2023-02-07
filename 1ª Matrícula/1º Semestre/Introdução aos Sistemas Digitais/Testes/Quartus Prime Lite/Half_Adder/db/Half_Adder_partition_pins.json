@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Sum",
+					"strict" : false
+				},
+				{
+					"name" : "Carry",
+					"strict" : false
+				},
+				{
+					"name" : "inPort0",
+					"strict" : false
+				},
+				{
+					"name" : "inPort1",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

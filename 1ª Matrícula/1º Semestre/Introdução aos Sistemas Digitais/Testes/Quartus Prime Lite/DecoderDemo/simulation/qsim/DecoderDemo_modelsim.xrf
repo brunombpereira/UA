@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Bruno/Desktop/Quartus Prime Lite/DecoderDemo/Dec2_4.bdf
+source_file = 1, C:/Users/Bruno/Desktop/Quartus Prime Lite/DecoderDemo/DecoderDemo.bdf
+source_file = 1, C:/Users/Bruno/Desktop/Quartus Prime Lite/DecoderDemo/db/DecoderDemo.cbx.xml
+design_name = DecoderDemo
+instance = comp, \Y0~output , Y0~output, DecoderDemo, 1
+instance = comp, \Y1~output , Y1~output, DecoderDemo, 1
+instance = comp, \Y2~output , Y2~output, DecoderDemo, 1
+instance = comp, \Y3~output , Y3~output, DecoderDemo, 1
+instance = comp, \E1~input , E1~input, DecoderDemo, 1
+instance = comp, \X0~input , X0~input, DecoderDemo, 1
+instance = comp, \X1~input , X1~input, DecoderDemo, 1
+instance = comp, \E0_L~input , E0_L~input, DecoderDemo, 1
+instance = comp, \Dec2_4|AND4_1 , Dec2_4|AND4_1, DecoderDemo, 1
+instance = comp, \Dec2_4|AND4_2 , Dec2_4|AND4_2, DecoderDemo, 1
+instance = comp, \Dec2_4|AND4_3 , Dec2_4|AND4_3, DecoderDemo, 1
+instance = comp, \Dec2_4|AND4_4 , Dec2_4|AND4_4, DecoderDemo, 1

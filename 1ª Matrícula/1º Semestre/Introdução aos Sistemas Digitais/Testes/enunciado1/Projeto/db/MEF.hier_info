@@ -1,0 +1,13 @@
+|MEF
+Y <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst1.CLK
+CLK => inst.CLK
+CLK => inst2.CLK
+RESET_H => inst16.IN1
+RESET_H => inst3.IN1
+RESET_H => inst15.IN1
+Q[0] <= <GND>
+Q[1] <= <GND>
+Q[2] <= <GND>
+
+

@@ -1,0 +1,13 @@
+|Full_Subtractor
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst7.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst4.IN1
+C => inst2.IN1
+B0 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+

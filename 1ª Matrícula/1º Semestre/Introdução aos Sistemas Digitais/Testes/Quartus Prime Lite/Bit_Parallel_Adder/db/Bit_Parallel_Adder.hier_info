@@ -1,0 +1,90 @@
+|Bit_Parallel_Adder
+S0 <= Bit_Parallel_Adder_Encoder:inst.S0
+A0 => Bit_Parallel_Adder_Encoder:inst.A0
+B0 => Bit_Parallel_Adder_Encoder:inst.B0
+C => Bit_Parallel_Adder_Encoder:inst.C
+A1 => Bit_Parallel_Adder_Encoder:inst.A1
+B1 => Bit_Parallel_Adder_Encoder:inst.B1
+A2 => Bit_Parallel_Adder_Encoder:inst.A2
+B2 => Bit_Parallel_Adder_Encoder:inst.B2
+A3 => Bit_Parallel_Adder_Encoder:inst.A3
+B3 => Bit_Parallel_Adder_Encoder:inst.B3
+S1 <= Bit_Parallel_Adder_Encoder:inst.S1
+S2 <= Bit_Parallel_Adder_Encoder:inst.S2
+S3 <= Bit_Parallel_Adder_Encoder:inst.S3
+C0 <= Bit_Parallel_Adder_Encoder:inst.C0
+
+
+|Bit_Parallel_Adder|Bit_Parallel_Adder_Encoder:inst
+S0 <= Full_Adder:Full_Adder_1.Sum
+A0 => Full_Adder:Full_Adder_1.A
+B0 => Full_Adder:Full_Adder_1.B
+C => Full_Adder:Full_Adder_1.Ci
+S1 <= Full_Adder:Full_Adder_2.Sum
+A1 => Full_Adder:Full_Adder_2.A
+B1 => Full_Adder:Full_Adder_2.B
+S2 <= Full_Adder:Full_Adder_3.Sum
+A2 => Full_Adder:Full_Adder_3.A
+B2 => Full_Adder:Full_Adder_3.B
+S3 <= Full_Adder:Full_Adder_4.Sum
+A3 => Full_Adder:Full_Adder_4.A
+B3 => Full_Adder:Full_Adder_4.B
+C0 <= Full_Adder:Full_Adder_4.Carry
+
+
+|Bit_Parallel_Adder|Bit_Parallel_Adder_Encoder:inst|Full_Adder:Full_Adder_1
+Sum <= XOR2.DB_MAX_OUTPUT_PORT_TYPE
+A => XOR1.IN0
+A => AND2_3.IN0
+A => AND2_2.IN1
+B => XOR1.IN1
+B => AND2_2.IN0
+B => AND2_1.IN0
+Ci => XOR2.IN1
+Ci => AND2_3.IN1
+Ci => AND2_1.IN1
+Carry <= OR2_2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Bit_Parallel_Adder|Bit_Parallel_Adder_Encoder:inst|Full_Adder:Full_Adder_2
+Sum <= XOR2.DB_MAX_OUTPUT_PORT_TYPE
+A => XOR1.IN0
+A => AND2_3.IN0
+A => AND2_2.IN1
+B => XOR1.IN1
+B => AND2_2.IN0
+B => AND2_1.IN0
+Ci => XOR2.IN1
+Ci => AND2_3.IN1
+Ci => AND2_1.IN1
+Carry <= OR2_2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Bit_Parallel_Adder|Bit_Parallel_Adder_Encoder:inst|Full_Adder:Full_Adder_3
+Sum <= XOR2.DB_MAX_OUTPUT_PORT_TYPE
+A => XOR1.IN0
+A => AND2_3.IN0
+A => AND2_2.IN1
+B => XOR1.IN1
+B => AND2_2.IN0
+B => AND2_1.IN0
+Ci => XOR2.IN1
+Ci => AND2_3.IN1
+Ci => AND2_1.IN1
+Carry <= OR2_2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Bit_Parallel_Adder|Bit_Parallel_Adder_Encoder:inst|Full_Adder:Full_Adder_4
+Sum <= XOR2.DB_MAX_OUTPUT_PORT_TYPE
+A => XOR1.IN0
+A => AND2_3.IN0
+A => AND2_2.IN1
+B => XOR1.IN1
+B => AND2_2.IN0
+B => AND2_1.IN0
+Ci => XOR2.IN1
+Ci => AND2_3.IN1
+Ci => AND2_1.IN1
+Carry <= OR2_2.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Bruno/Desktop/112726/Projeto/MEF.bdf
+source_file = 1, C:/Users/Bruno/Desktop/112726/Projeto/db/MEF.cbx.xml
+design_name = MEF
+instance = comp, \Q[1]~output , Q[1]~output, MEF, 1
+instance = comp, \Q[0]~output , Q[0]~output, MEF, 1
+instance = comp, \CLK~input , CLK~input, MEF, 1
+instance = comp, \RESET~input , RESET~input, MEF, 1
+instance = comp, \inst19~0 , inst19~0, MEF, 1
+instance = comp, \X~input , X~input, MEF, 1
+instance = comp, \inst18~1 , inst18~1, MEF, 1
+instance = comp, \inst18~0 , inst18~0, MEF, 1

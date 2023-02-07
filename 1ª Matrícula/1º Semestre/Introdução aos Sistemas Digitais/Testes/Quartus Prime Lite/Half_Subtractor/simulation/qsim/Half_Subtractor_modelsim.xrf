@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Bruno/Desktop/Quartus Prime Lite/Half_Subtractor/Half_Subtractor.bdf
+source_file = 1, C:/Users/Bruno/Desktop/Quartus Prime Lite/Half_Subtractor/db/Half_Subtractor.cbx.xml
+design_name = Half_Subtractor
+instance = comp, \D~output , D~output, Half_Subtractor, 1
+instance = comp, \B0~output , B0~output, Half_Subtractor, 1
+instance = comp, \A~input , A~input, Half_Subtractor, 1
+instance = comp, \B~input , B~input, Half_Subtractor, 1

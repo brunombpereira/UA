@@ -1,0 +1,150 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Bruno/Desktop/Quartus Prime Lite/Full_Adder/simulation/qsim
+Efull_adder
+Z1 w1669643653
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
+!i122 0
+R0
+Z8 8Full_Adder.vho
+Z9 FFull_Adder.vho
+l0
+L35 1
+VRGjiBJE70h3a<AAieze013
+!s100 R[m8CaOFIlR:]>7EhD8K>1
+Z10 OV;C;2020.1;71
+32
+Z11 !s110 1669643654
+!i10b 1
+Z12 !s108 1669643654.000000
+Z13 !s90 -work|work|Full_Adder.vho|
+Z14 !s107 Full_Adder.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 full_adder 0 22 RGjiBJE70h3a<AAieze013
+!i122 0
+l68
+L45 120
+VBUlccgdeZFdS3Y<LAdO3J1
+!s100 nAI>[Pnko1C3nAfa7Qk6>1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+vFull_Adder
+Z17 !s110 1669643672
+!i10b 1
+!s100 >DPe5fHF4^eDM?SO8G[0G0
+Z18 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IY6Z1aTGL^lGmAUjh^n>2h2
+Z19 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1669643671
+8Full_Adder.vo
+FFull_Adder.vo
+!i122 2
+L0 32 120
+Z20 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z21 !s108 1669643672.000000
+!s107 Full_Adder.vo|
+!s90 -work|work|Full_Adder.vo|
+!i113 1
+R15
+Z22 tCvgOpt 0
+n@full_@adder
+Efull_adder_vhd_vec_tst
+Z23 w1669643652
+R5
+R6
+!i122 1
+R0
+Z24 8Full_Adder.vwf.vht
+Z25 FFull_Adder.vwf.vht
+l0
+L32 1
+V7B:YeRi<HFIK7ILDid;?Y1
+!s100 nY@FE;VbVYZk=1l8hcc=]0
+R10
+32
+R11
+!i10b 1
+R12
+Z26 !s90 -work|work|Full_Adder.vwf.vht|
+Z27 !s107 Full_Adder.vwf.vht|
+!i113 1
+R15
+R16
+Afull_adder_arch
+R5
+R6
+DEx4 work 22 full_adder_vhd_vec_tst 0 22 7B:YeRi<HFIK7ILDid;?Y1
+!i122 1
+l51
+L34 631
+V30eXjDTmfl8IhRJC`WfUf2
+!s100 B9Ei9kzYMU;UP[<d3obEF3
+R10
+32
+R11
+!i10b 1
+R12
+R26
+R27
+!i113 1
+R15
+R16
+vFull_Adder_vlg_vec_tst
+R17
+!i10b 1
+!s100 :z=mjCLeeEm;LT7]DZdC12
+R18
+IHT0BSTdVn=T09eazo2=4X3
+R19
+R0
+w1669643670
+8Full_Adder.vwf.vt
+FFull_Adder.vwf.vt
+!i122 3
+L0 30 333
+R20
+r1
+!s85 0
+31
+R21
+!s107 Full_Adder.vwf.vt|
+!s90 -work|work|Full_Adder.vwf.vt|
+!i113 1
+R15
+R22
+n@full_@adder_vlg_vec_tst

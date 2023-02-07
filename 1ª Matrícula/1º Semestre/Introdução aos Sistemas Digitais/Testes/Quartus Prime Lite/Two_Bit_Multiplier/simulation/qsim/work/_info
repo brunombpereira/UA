@@ -1,0 +1,150 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Bruno/Desktop/Quartus Prime Lite/Two_Bit_Multiplier/simulation/qsim
+Etwo_bit_multiplier
+Z1 w1669815494
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
+!i122 0
+R0
+Z8 8Two_Bit_Multiplier.vho
+Z9 FTwo_Bit_Multiplier.vho
+l0
+L35 1
+VOSF9e<YhM<E00CV?jiXF10
+!s100 @O6?e2<@`44WSVgSEJV6b2
+Z10 OV;C;2020.1;71
+32
+Z11 !s110 1669815496
+!i10b 1
+Z12 !s108 1669815495.000000
+Z13 !s90 -work|work|Two_Bit_Multiplier.vho|
+Z14 !s107 Two_Bit_Multiplier.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 18 two_bit_multiplier 0 22 OSF9e<YhM<E00CV?jiXF10
+!i122 0
+l92
+L52 266
+V5jWl3EE=I:D6[c1<QPPEn3
+!s100 9mmS;_?3nT[OMk1S9<4Ag3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+vTwo_Bit_Multiplier
+Z17 !s110 1669815516
+!i10b 1
+!s100 ?l7CK`WfPMfgGVDjbSZg_0
+Z18 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IF@Di8J9Z_Dcn=:a6l[kSf2
+Z19 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1669815514
+8Two_Bit_Multiplier.vo
+FTwo_Bit_Multiplier.vo
+!i122 2
+L0 32 265
+Z20 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1669815515.000000
+!s107 Two_Bit_Multiplier.vo|
+!s90 -work|work|Two_Bit_Multiplier.vo|
+!i113 1
+R15
+Z21 tCvgOpt 0
+n@two_@bit_@multiplier
+Etwo_bit_multiplier_vhd_vec_tst
+Z22 w1669815493
+R5
+R6
+!i122 1
+R0
+Z23 8Two_Bit_Multiplier.vwf.vht
+Z24 FTwo_Bit_Multiplier.vwf.vht
+l0
+L32 1
+V?1Se923DKofWcg0Q89Znj3
+!s100 aL=b`kAOE;OEm9TV@7[C:1
+R10
+32
+R11
+!i10b 1
+Z25 !s108 1669815496.000000
+Z26 !s90 -work|work|Two_Bit_Multiplier.vwf.vht|
+Z27 !s107 Two_Bit_Multiplier.vwf.vht|
+!i113 1
+R15
+R16
+Atwo_bit_multiplier_arch
+R5
+R6
+DEx4 work 30 two_bit_multiplier_vhd_vec_tst 0 22 ?1Se923DKofWcg0Q89Znj3
+!i122 1
+l65
+L34 1655
+VI@<b3JYeWGd35FR=5J=jW0
+!s100 7fe?0JR??]M1QO3SQLQT<3
+R10
+32
+R11
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R15
+R16
+vTwo_Bit_Multiplier_vlg_vec_tst
+R17
+!i10b 1
+!s100 MNnin>4gZA;VORnDd@fF81
+R18
+Izno<UTC03cOS5Lg<4=InP1
+R19
+R0
+w1669815513
+8Two_Bit_Multiplier.vwf.vt
+FTwo_Bit_Multiplier.vwf.vt
+!i122 3
+L0 30 861
+R20
+r1
+!s85 0
+31
+!s108 1669815516.000000
+!s107 Two_Bit_Multiplier.vwf.vt|
+!s90 -work|work|Two_Bit_Multiplier.vwf.vt|
+!i113 1
+R15
+R21
+n@two_@bit_@multiplier_vlg_vec_tst
