@@ -1,6 +1,5 @@
 import hashlib
 import sys
-import io
 
 # Obtem os nomes dos ficheiros a partir dos argumentos da linha de comando
 arquivos = sys.argv[1:]
@@ -12,7 +11,7 @@ for arquivo in arquivos:
         hash_sha1 = hashlib.sha1()
 
         while (True):
-            data = f.read(io.DEFAULT_BUFFER_SIZE)
+            data = f.read(512)
             
             if not data: # quando já não há mais nada no ficheiro para ler o ciclo acaba    
                 break
