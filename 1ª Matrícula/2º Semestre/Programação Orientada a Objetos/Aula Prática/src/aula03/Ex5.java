@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Ex5 {
     public static String read(String prompt) {
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print(prompt);
+            String date = sc.nextLine();
 
-        System.out.print(prompt);
-        String date = sc.nextLine();
-
-        return date;
+            return date;
+        }
     }
 
     public static boolean validate(String date, int weekDay) {
@@ -19,7 +19,7 @@ public class Ex5 {
         } else {
             try {
                 int month = Integer.parseInt(date.split("/")[0]);
-                int year = Integer.parseInt(date.split("/")[1]);
+
 
                 if (month < 1 || month > 12) {
                     System.out.println("Mês inválido. O mês deve estar entre 1 e 12.");
@@ -98,6 +98,7 @@ public class Ex5 {
                     int year = Integer.parseInt(date.split("/")[1]);
                     int days = monthDays(month, year);
                     printCalendar(days, month, year, weekDay);
+                    sc.close();
                     break;
                 }
             }catch(Exception e) {
