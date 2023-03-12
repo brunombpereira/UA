@@ -23,7 +23,7 @@ class CashRegister {
     }
 
     public void printReceipt() {
-        System.out.println("Product\tPrice\tQuantity\tTotal");
+        System.out.printf("%-10s %9s %9s %9s", "Produto", "Price", "Quantity", "Total\n");
 
         double totalValue = 0;
 
@@ -32,7 +32,7 @@ class CashRegister {
             
             double value = product.getTotalValue();
             totalValue += value;
-            System.out.printf("%s\t%.2f\t%d\t\t%.2f\n", product.name(), product.price(), product.quantity(), value);
+            System.out.printf("%-11s%10.2f\t%d\t\t%.2f\n", product.name(), product.price(), product.quantity(), value);
         }
         System.out.printf("Total value: %.2f", totalValue);
     }
