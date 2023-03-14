@@ -4,93 +4,87 @@ import java.util.Scanner;
 
 
 class Calendar {
-    private int year, weekDay;
+    private int year, weekDay, x;
+    private int c = 0;
+    private int[][] events;
 
     public Calendar(int year, int weekDay) {
         if (validateWeekDay(weekDay)) {
             this.year = year;
             this.weekDay = weekDay;
+            this.events = new int[12][];
+
+            for (int i = 0; i < events.length; i++) {
+                int numDays = monthDays(year)[i];
+                this.events[i] = new int[numDays];
+            }
+
+            this.x = weekDay; // inicializa x com o valor de weekDay
+        }
+    }
+
+    public void addEvent(DateYMD date) {
+        int month = date.getMonth() - 1;
+        int day = date.getDay();
+        if (month < 0 || month >= events.length || day < 1 || day > events[month].length) {
+            throw new IllegalArgumentException("Invalid date");
+        }
+        events[month][day - 1]++;
+    }
+
+    public void removeEvent(DateYMD date) {
+        int month = date.getMonth() - 1;
+        int day = date.getDay();
+        if (month < 0 || month >= events.length || day < 1 || day > events[month].length) {
+            throw new IllegalArgumentException("Invalid date");
+        }
+        if (events[month][day - 1] > 0) {
+            events[month][day - 1]--;
         }
     }
 
     public void toString(int month) {
         String[] monthNames = {"Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
-        int[] daysMonth = monthDays(year);
-        int x = weekDay;
-        int c = 0;
+        int numDays = monthDays(year)[month - 1];
+
         System.out.printf("%s %d\n", monthNames[month - 1], year);
         System.out.println("Su Mo Tu We Th Fr Sa");
 
-        for (int i = 0; i < month - 1; i ++) {
-            for (int j = 1; j <= daysMonth[i]; j++) {
-                if ((j + x) % 7 == 0) {
-                    if((j + x - 1) % 7 == 6) {
-                        c = 7;
-                    }else {
-                        c = (j + x) % 7;
-                    }
-                }else {
-                    c = (j + x) % 7;
-                }
-            }
-            x = c;
-        }
-
-        if (x == 0) {
-            x = 7;
-        }
-
-        if (month == 2 && x == 7) {
-            x = 0;
-        }
-
-        for (int k = 1; k < x; k++) {
+        for (int i = 1; i < x; i++) {
             System.out.print("   ");
         }
 
-        for (int j = 1; j <= daysMonth[month - 1]; j++) {
-            System.out.printf("%2d ", j);
-            if ((j + x - 1) % 7 == 0) {
+        for (int i = 1; i <= numDays; i++) {
+            if (events[month - 1][i - 1] > 0) {
+                System.out.printf("*%2d ", i);
+            } else {
+                System.out.printf("%2d ", i);
+            }
+            if ((i + x - 1) % 7 == 0) {
                 System.out.println();
             }
-        }
-        System.out.println("\n");
-    }
-
-    public void printCalendar() {
-        String[] monthNames = {"Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
-        int[] daysMonth = monthDays(year);
-        int x = weekDay;
-        int c = 0;
-
-        for (int i = 0; i < monthNames.length; i ++) {
-            System.out.printf("%s %d\n", monthNames[i], year);
-            System.out.println("Su Mo Tu We Th Fr Sa");
-
-            for (int k = 1; k < x; k++) {
-                System.out.print("   ");
-            }
-
-            for (int j = 1; j <= daysMonth[i]; j++) {
-                System.out.printf("%2d ", j);
-                if ((j + x - 1) % 7 == 0) {
-                    System.out.println();
+            if ((i + x) % 7 == 0) {
+                if ((i + x - 1) % 7 == 6) {
+                    c = 7;
+                } else {
+                    c = (i + x) % 7;
                 }
-                if ((j + x) % 7 == 0) {
-                    if((j + x - 1) % 7 == 6) {
-                        c = 7;
-                    }else {
-                        c = (j + x) % 7;
-                    }
-                }else {
-                    c = (j + x) % 7;
-                }
+            } else {
+                c = (i + x) % 7;
             }
-            x = c;
-            System.out.println("\n");
         }
 
         System.out.println();
+    }
+
+
+
+    public void printCalendar() {
+        for (int i = 1; i <= 12; i++) {
+            toString(i);
+            x = c;
+            System.out.println();
+        }
     }
 
     public static boolean isLeapYear(int year) {
@@ -98,11 +92,12 @@ class Calendar {
     }
 
     public static int[] monthDays(int year) {
+        int[] days = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
         if (isLeapYear(year)) {
             return new int[]{31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-        } else {
-            return new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         }
+        return days;
     }
 
     public boolean validateWeekDay(int weekDay) {
@@ -112,6 +107,10 @@ class Calendar {
     public int getWeekDay() {
         return weekDay;
     }
+
+    public int getYear() {
+        return year;
+    }
 }
 
 
@@ -119,8 +118,11 @@ public class Ex2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        DateYMD[] date = new DateYMD[1];
-        date[0] = new DateYMD(2022, 3, 11);
+        DateYMD[] date = new DateYMD[365];
+
+        for (int i = 0; i < date.length; i ++) {
+            date[i] = new DateYMD(2004, 1, 1);
+        }
 
         Calendar[] calendar = new Calendar[1];
         calendar[0] = new Calendar(2023,1);
@@ -130,6 +132,8 @@ public class Ex2 {
             System.out.println("1 - Create new calendar");
             System.out.println("2 - Print calendar month");
             System.out.println("3 - Print calendar");
+            System.out.println("4 - Add event");
+            System.out.println("5 - Remove event");
             System.out.println("0 - Exit\n");
             System.out.println("Option: ");
             int option = sc.nextInt();
@@ -175,7 +179,38 @@ public class Ex2 {
             }
             else if (option == 3) {
                 calendar[0].printCalendar();
-            } else break;
+            }
+            else if (option == 4) {
+                while (true){
+                    System.out.println("Enter the date of the event:\n");
+                    System.out.print("Month: ");
+                    int month = sc.nextInt();
+                    System.out.print("Day: ");
+                    int day = sc.nextInt();
+                    DateYMD eventDate = new DateYMD(calendar[0].getYear(), month, day);
+                    if (eventDate.getDay() != 0) {
+                        calendar[0].addEvent(eventDate);
+                        System.out.println("Event added to the calendar.");
+                        break;
+                    }
+                }
+            } else if (option == 5) {
+                while (true){
+                    System.out.println("Enter the date of the event:\n");
+                    System.out.print("Month: ");
+                    int month = sc.nextInt();
+                    System.out.print("Day: ");
+                    int day = sc.nextInt();
+                    DateYMD eventDate = new DateYMD(calendar[0].getYear(), month, day);
+                    if (eventDate.getDay() != 0) {
+                        calendar[0].removeEvent(eventDate);
+                        System.out.println("Event removed to the calendar.");
+                        break;
+                    }
+                }
+            }
+            else break;
+
         }
     }
 }
