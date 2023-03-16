@@ -85,6 +85,8 @@ class Calendar {
             x = c;
             System.out.println();
         }
+        x = weekDay;
+        c = 0;
     }
 
     public static boolean isLeapYear(int year) {
