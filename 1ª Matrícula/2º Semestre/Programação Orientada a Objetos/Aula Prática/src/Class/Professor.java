@@ -26,6 +26,6 @@ public class Professor extends Pessoa{
     }
 
     public String toString() {
-        return getName() + ":\nNúmero de Cartão de Cidadão: " + getCc() + "\nData de Nascimento" + getBirthDate().toString() + "\nCategoria: " + getCategory() + "\nDepartamento: " + getDepartment();
+        return getName() + ":\nNúmero de Cartão de Cidadão: " + getCc() + "\nData de Nascimento: " + getBirthDate().toString() + "\nCategoria: " + getCategory() + "\nDepartamento: " + getDepartment();
     }
 }

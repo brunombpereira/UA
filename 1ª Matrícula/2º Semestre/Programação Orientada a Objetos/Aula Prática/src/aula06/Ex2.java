@@ -1,6 +1,5 @@
 package aula06;
 
-import java.util.Objects;
 import java.util.Scanner;
 import Class.Date;
 import Class.Contacto;
@@ -41,14 +40,14 @@ public class Ex2 {
                 Contacto contact = new Contacto(name, cc, birthDate, phoneNumber, email);
 
                 for (int i = 0; true;) {
-                    if (Objects.equals(contacts[i], contact)) {
+                    if (contacts[i] != null && contacts[i].equals(contact)) {
                         System.out.print("Este contacto já existe, quer continuar a inserir como novo contacto? (Sim/Não)");
                         String choice = sc.next().toLowerCase();
 
-                        if (choice.equals("yes")) {
+                        if (choice.equals("sim")) {
                             for (int j = 0; j < contacts.length; j++) {
                                 if (contacts[j] == null) {
-                                    contacts[j] = new Contacto(name, cc, birthDate, phoneNumber, email);
+                                    contacts[j] = contact;
                                     break;
                                 }
                             }
@@ -56,7 +55,7 @@ public class Ex2 {
                     } else {
                         for (int j = 0; j < contacts.length; j++) {
                             if (contacts[j] == null) {
-                                contacts[j] = new Contacto(name, cc, birthDate, phoneNumber, email);
+                                contacts[j] = contact;
                                 break;
                             }
                         }
@@ -78,9 +77,8 @@ public class Ex2 {
                 }
 
                 if (counter > 1) {
-                    System.out.print("Insira o nome do caontacto que deseja alterar: ");
-                    sc.nextLine();
-                    String name = sc.nextLine();
+                    System.out.print("Insira o ID do contacto que deseja alterar: ");
+                    int id = sc.nextInt();
                     System.out.println("O que deseja alterar?\n");
                     System.out.println("1 - Nome\n2 - Número de Cartão de Cidadão\n3 - Data de Nascimento\n4 - Número de telemóvel\n5 - Email\n0 - Cancelar");
                     System.out.print("Opção: ");
@@ -93,7 +91,7 @@ public class Ex2 {
                             String newName = sc.nextLine();
 
                             for (Contacto contact : contacts) {
-                                if (contact != null && contact.getName().equals(name)) {
+                                if (contact != null && contact.getId() == id) {
                                     contact.setName(newName);
                                     break;
                                 }
@@ -104,7 +102,7 @@ public class Ex2 {
                             int newCc = sc.nextInt();
 
                             for (Contacto contact : contacts) {
-                                if (contact != null && contact.getName().equals(name)) {
+                                if (contact != null && contact.getId() == id) {
                                     contact.setCc(newCc);
                                     break;
                                 }
@@ -122,7 +120,7 @@ public class Ex2 {
                             Date newBirthDate = new Date(year, month, day);
 
                             for (Contacto contact : contacts) {
-                                if (contact != null && contact.getName().equals(name)) {
+                                if (contact != null && contact.getId() == id) {
                                     contact.setBirthDate(newBirthDate);
                                     break;
                                 }
@@ -133,7 +131,7 @@ public class Ex2 {
                             int newPhoneNumber = sc.nextInt();
 
                             for (Contacto contact : contacts) {
-                                if (contact != null && contact.getName().equals(name)) {
+                                if (contact != null && contact.getId() == id) {
                                     contact.setPhoneNumber(newPhoneNumber);
                                     break;
                                 }
@@ -145,7 +143,7 @@ public class Ex2 {
                             String newEmail = sc.nextLine();
 
                             for (Contacto contact : contacts) {
-                                if (contact != null && contact.getName().equals(name)) {
+                                if (contact != null && contact.getId() == id) {
                                     contact.setEmail(newEmail);
                                     break;
                                 }
@@ -247,14 +245,13 @@ public class Ex2 {
                 }
 
                 if (counter > 1) {
-                    System.out.println("\nComo há mais de 1 contacto com este nome, insira o nome do contacto que deseja apagar: ");
-                    sc.nextLine();
-                    String name = sc.nextLine();
+                    System.out.println("\nComo há mais de 1 contacto com este nome, insira o ID do contacto que deseja apagar: ");
+                    int id = sc.nextInt();
 
                     for (Contacto contact : contacts) {
                         count++;
 
-                        if (contact != null && contact.getName().equals(name)) {
+                        if (contact != null && contact.getId() == id) {
                             for (int i = 0; i < newContacts.length; i++) {
                                 if (i != (count - 1)) {
                                     newContacts[i] = contacts[i];

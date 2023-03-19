@@ -2,7 +2,7 @@ package Class;
 
 public class Aluno extends Pessoa{
     private int nMec;
-    private int nextNMec = 100;
+    private static int nextNMec = 100;
     private Date rDate;
 
     public Aluno(String name, int cc, Date birthDate, Date rDate) {
@@ -29,6 +29,6 @@ public class Aluno extends Pessoa{
     }
 
     public String toString() {
-        return getName() + ":\nNúmero de Cartão de Cidadão: " + getCc() + "\nData de Nascimento" + getBirthDate().toString() + "\nNúmero Mecanográfico: " + getnMec() + "\nData de Inscrição: " + getrDate().toString();
+        return getName() + ":\nNúmero de Cartão de Cidadão: " + getCc() + "\nData de Nascimento: " + getBirthDate().toString() + "\nNúmero Mecanográfico: " + getnMec() + "\nData de Inscrição: " + getrDate().toString();
     }
 }

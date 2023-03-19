@@ -2,7 +2,7 @@ package Class;
 
 public class Contacto extends Pessoa {
     private int id, phoneNumber;
-    private int nextid = 1;
+    private static int nextid = 1;
     private String email;
 
     public Contacto(String name, int cc, Date birthDate, int phoneNumber, String email) {
@@ -10,7 +10,7 @@ public class Contacto extends Pessoa {
 
         if (validateContact(phoneNumber, email)) {
             this.id = nextid;
-            this.nextid++;
+            nextid++;
             this.phoneNumber = phoneNumber;
             this.email = email;
         }
@@ -39,6 +39,18 @@ public class Contacto extends Pessoa {
 
     public boolean validateContact(int phoneNumber, String email) {
         return validatePhoneNumber(phoneNumber) && validateEmail(email);
+    }
+
+    public boolean equals(Object object) {
+        if (this == object) {
+            return true;
+        }else if (object == null) {
+            return false;
+        }else if (getClass() != object.getClass()) {
+            return false;
+        }
+
+        return phoneNumber == ((Contacto) object).phoneNumber;
     }
 
     public int getId() {
