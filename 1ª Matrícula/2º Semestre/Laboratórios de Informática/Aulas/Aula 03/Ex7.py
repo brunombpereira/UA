@@ -21,6 +21,7 @@ def main():
                 str_data = sys.stdin.readline()
                 udp_s.sendto(str_data.encode("utf-8"), server_addr)
 
+
     udp_s.close()
 
 

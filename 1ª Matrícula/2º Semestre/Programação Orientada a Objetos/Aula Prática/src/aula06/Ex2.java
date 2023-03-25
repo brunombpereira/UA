@@ -254,7 +254,7 @@ public class Ex2 {
                         if (contact != null && contact.getId() == id) {
                             for (int i = 0; i < newContacts.length; i++) {
                                 if (i != (count - 1)) {
-                                    newContacts[i] = contacts[i];
+                                    newContacts[i] = new Contacto(contacts[i].getName(), contacts[i].getCc(), contacts[i].getBirthDate(), contacts[i].getPhoneNumber(), contacts[i].getEmail());
                                 }
                             }
                         }
