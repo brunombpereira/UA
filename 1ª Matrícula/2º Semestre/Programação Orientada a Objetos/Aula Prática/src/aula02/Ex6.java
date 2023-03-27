@@ -13,7 +13,7 @@ public class Ex6 {
         int m = (s % 3600) / 60;
         int s2 = (s % 3600) % 60;
 
-        System.out.println(s + "s corresponde a " + h + ":" + m + ":" + s2);
+        System.out.printf("%2d %1s %2d %1s %2d", h, ":", m, ":", s2);
 
         sc.close();
     }
