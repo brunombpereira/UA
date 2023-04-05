@@ -1,4 +1,4 @@
-package aula04;
+package aula07;
 
 import java.util.Scanner;
 import Class.Circle;
@@ -48,7 +48,7 @@ public class Ex1 {
                                 for (int j = i+1; j < circles.length; j++) {
                                     if (circles[i].equals(circles[j])) {
                                         System.out.println("O círculo " + (i+1) + " é igual ao círculo " + (j+1) + "\n");
-                                    } 
+                                    }
                                     else {
                                         System.out.println("O círculo " + (i+1) + " é diferente do círculo " + (j+1) + "\n");
                                     }
@@ -57,12 +57,12 @@ public class Ex1 {
                                 System.out.println("-------------------------------------------------------");
                             }
                         }
-                        
-                        break;                        
-                    } 
+
+                        break;
+                    }
                     catch (Exception ignored) {
                     }
-                }                
+                }
             }
             else if (option == 2) {
                 while(true){
@@ -109,9 +109,9 @@ public class Ex1 {
                                 System.out.println("-----------------------------------------------");
                             }
                         }
-                        
-                        break;                  
-                    } 
+
+                        break;
+                    }
                     catch (Exception ignored) {
                     }
                 }
@@ -159,9 +159,9 @@ public class Ex1 {
                                 System.out.println("-----------------------------------------------");
                             }
                         }
-                        
-                        break;                  
-                    } 
+
+                        break;
+                    }
                     catch (Exception ignored) {
                     }
                 }
@@ -171,5 +171,5 @@ public class Ex1 {
                 break;
             }
         }
-    }  
+    }
 }
