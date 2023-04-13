@@ -1,7 +1,7 @@
 package aula06;
 
 import java.util.Scanner;
-import Class.Date;
+import Class.DateYMD;
 import Class.Contacto;
 
 public class Ex2 {
@@ -30,7 +30,7 @@ public class Ex2 {
                 System.out.print("Ano: ");
                 int year = sc.nextInt();
 
-                Date birthDate = new Date(year, month, day);
+                DateYMD birthDate = new DateYMD(year, month, day);
 
                 System.out.print("\nNúmero de telemóvel: ");
                 int phoneNumber = sc.nextInt();
@@ -117,7 +117,7 @@ public class Ex2 {
                             System.out.print("Ano: ");
                             int year = sc.nextInt();
 
-                            Date newBirthDate = new Date(year, month, day);
+                            DateYMD newBirthDate = new DateYMD(year, month, day);
 
                             for (Contacto contact : contacts) {
                                 if (contact != null && contact.getId() == id) {
@@ -192,7 +192,7 @@ public class Ex2 {
                             System.out.print("Ano: ");
                             int year = sc.nextInt();
 
-                            Date newBirthDate = new Date(year, month, day);
+                            DateYMD newBirthDate = new DateYMD(year, month, day);
 
                             for (Contacto contact : contacts) {
                                 if (contact != null && contact.getPhoneNumber() == phoneNumber) {

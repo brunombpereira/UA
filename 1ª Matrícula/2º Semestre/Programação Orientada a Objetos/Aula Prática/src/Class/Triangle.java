@@ -81,6 +81,7 @@ public class Triangle extends Forma {
                 "side1=" + side1 +
                 ", side2=" + side2 +
                 ", side3=" + side3 +
+                ", color='" + color + '\'' +
                 '}';
     }
 }

@@ -31,11 +31,7 @@ public abstract class Forma {
     }
 
     @Override
-    public String toString() {
-        return "Forma{" +
-                "color='" + color + '\'' +
-                '}';
-    }
+    public abstract String toString();
 
     public abstract double area();
 

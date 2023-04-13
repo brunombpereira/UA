@@ -4,7 +4,7 @@ public class Bolseiro extends Aluno{
     private Professor tadvisor;
     private int scholarship;
 
-    public Bolseiro(String name, int cc, Date birthDate, Date rDate, Professor tadvisor, int scholarship) {
+    public Bolseiro(String name, int cc, DateYMD birthDate, DateYMD rDate, Professor tadvisor, int scholarship) {
         super(name, cc, birthDate, rDate);
         this.tadvisor = tadvisor;
         this.scholarship = scholarship;

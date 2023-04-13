@@ -66,6 +66,7 @@ public class Rectangle extends Forma {
         return "Rectangle{" +
                 "lenght=" + lenght +
                 ", height=" + height +
+                ", color='" + color + '\'' +
                 '}';
     }
 }

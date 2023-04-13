@@ -5,7 +5,7 @@ public class Contacto extends Pessoa {
     private static int nextid = 1;
     private String email;
 
-    public Contacto(String name, int cc, Date birthDate, int phoneNumber, String email) {
+    public Contacto(String name, int cc, DateYMD birthDate, int phoneNumber, String email) {
         super(name, cc, birthDate);
 
         if (validateContact(phoneNumber, email)) {

@@ -54,9 +54,9 @@ public class Circle extends Forma{
 
     @Override
     public String toString() {
-        super.toString();
         return "Circle{" +
                 "ray=" + ray +
+                ", color='" + color + '\'' +
                 '}';
     }
 }

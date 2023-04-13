@@ -3,7 +3,7 @@ package Class;
 public class Professor extends Pessoa{
     private String category, department;
 
-    public Professor(String name, int cc, Date birthDate, String category, String department) {
+    public Professor(String name, int cc, DateYMD birthDate, String category, String department) {
         super(name, cc, birthDate);
         this.category = category;
         this.department = department;

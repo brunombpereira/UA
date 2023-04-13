@@ -3,9 +3,9 @@ package Class;
 public class Aluno extends Pessoa{
     private int nMec;
     private static int nextNMec = 100;
-    private Date rDate;
+    private DateYMD rDate;
 
-    public Aluno(String name, int cc, Date birthDate, Date rDate) {
+    public Aluno(String name, int cc, DateYMD birthDate, DateYMD rDate) {
         super(name, cc, birthDate);
         this.nMec = nextNMec;
         nextNMec++;
@@ -20,11 +20,11 @@ public class Aluno extends Pessoa{
         this.nMec = nMec;
     }
 
-    public Date getrDate() {
+    public DateYMD getrDate() {
         return rDate;
     }
 
-    public void setrDate(Date rDate) {
+    public void setrDate(DateYMD rDate) {
         this.rDate = rDate;
     }
 

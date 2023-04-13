@@ -3,9 +3,9 @@ package Class;
 public class Pessoa {
     private String name;
     private int cc;
-    private Date birthDate;
+    private DateYMD birthDate;
 
-    public Pessoa(String name, int cc, Date birthDate) {
+    public Pessoa(String name, int cc, DateYMD birthDate) {
         if (validateCC(cc)) {
             this.name = name;
             this.cc = cc;
@@ -39,11 +39,11 @@ public class Pessoa {
         this.cc = cc;
     }
 
-    public Date getBirthDate() {
+    public DateYMD getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(DateYMD birthDate) {
         this.birthDate = birthDate;
     }
 
