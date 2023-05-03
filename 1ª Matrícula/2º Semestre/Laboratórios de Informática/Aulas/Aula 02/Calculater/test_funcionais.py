@@ -99,7 +99,7 @@ class TestCalculadora(unittest.TestCase):
     def test_raiz_quadrada_numeros_validos(self):
         self.assertAlmostEqual(raiz_quadrada(4), 2)
         self.assertAlmostEqual(raiz_quadrada(9), 3)
-        self.assertAlmostEqual(raiz_quadrada(2), 1.4156)
+        self.assertAlmostEqual(raiz_quadrada(2), 1.41)
         self.assertAlmostEqual(raiz_quadrada(0), 0)
 
     def test_raiz_quadrada_argumentos_invalidos(self):

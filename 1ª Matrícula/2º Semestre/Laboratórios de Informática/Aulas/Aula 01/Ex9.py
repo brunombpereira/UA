@@ -5,6 +5,7 @@ from Crypto.Cipher import AES
 
 BLOCK_SIZE = 16
 
+
 def generate_key(key):
     if len(key) < BLOCK_SIZE:
         # Gerar uma síntese de chave com SHA-256
@@ -14,14 +15,11 @@ def generate_key(key):
         key = key[:BLOCK_SIZE].encode('utf-8')
     return key
 
-def pad_data(data):
-    pad_len = BLOCK_SIZE - (len(data) % BLOCK_SIZE)
-    padding = bytes([pad_len] * pad_len)
-    return data + padding
 
 def unpad_data(data):
     pad_len = data[-1]
     return data[:-pad_len]
+
 
 def decrypt_file(file_path, key, output_path):
     with open(file_path, 'rb') as file:
@@ -41,6 +39,7 @@ def decrypt_file(file_path, key, output_path):
     # Escrever arquivo decifrado
     with open(output_path, 'wb') as output_file:
         output_file.write(plaintext)
+
 
 if __name__ == '__main__':
     if len(sys.argv) != 4:

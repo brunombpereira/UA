@@ -1,9 +1,8 @@
-import os
-import sys
-import hashlib
+import sys, hashlib
 from Crypto.Cipher import AES
 
-BLOCK_SIZE = 16 # Definir a dimensão da chave
+BLOCK_SIZE = 16  # Definir a dimensão da chave
+
 
 def generate_key(key):
     if len(key) < BLOCK_SIZE:
@@ -42,6 +41,7 @@ def encrypt_file(file_path, key, output_path):
     with open(output_path, 'wb') as output_file:
         output_file.write(nonce)
         output_file.write(ciphertext)
+
 
 if __name__ == '__main__':
     if len(sys.argv) != 4:
