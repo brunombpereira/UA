@@ -67,4 +67,14 @@ public class Validate {
             return false;
         }
     }
+
+    public static boolean validateAutonomy(int autonomy) {
+        if (autonomy >= 0) {
+            return true;
+        } else {
+            System.out.println("A autonomia tem de ser igual ou superior a 0.");
+
+            return false;
+        }
+    }
 }

@@ -1,4 +1,4 @@
-package Class;
+package Interfaces;
 
 public interface VeiculoEletrico {
     int autonomia();

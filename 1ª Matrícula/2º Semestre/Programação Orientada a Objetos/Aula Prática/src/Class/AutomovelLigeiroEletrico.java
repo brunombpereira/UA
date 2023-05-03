@@ -1,8 +1,18 @@
 package Class;
 
-public class AutomovelLigeiroEletrico extends AutomovelLigeiro{
-    public AutomovelLigeiroEletrico(String plate, String brand, String model, int potency, int km, String companyName, int serialNumber, int luggageCapacity) {
+import Interfaces.VeiculoEletrico;
+
+import static Utils.Validate.*;
+
+public class AutomovelLigeiroEletrico extends AutomovelLigeiro implements VeiculoEletrico {
+    private int autonomy;
+
+    public AutomovelLigeiroEletrico(String plate, String brand, String model, int potency, int km, String companyName, int serialNumber, int luggageCapacity, int autonomy) {
         super(plate, brand, model, potency, km, companyName, serialNumber, luggageCapacity);
+
+        if (validateAutonomy(autonomy)) {
+            this.autonomy = autonomy;
+        }
     }
 
     @Override
@@ -88,5 +98,23 @@ public class AutomovelLigeiroEletrico extends AutomovelLigeiro{
     @Override
     public int hashCode() {
         return super.hashCode();
+    }
+
+    @Override
+    public int autonomia() {
+        return autonomy;
+    }
+
+    @Override
+    public void carregar(int percentagem) {
+        autonomy += (autonomy / (percentagem / 100));
+    }
+
+    public int getAutonomy() {
+        return autonomy;
+    }
+
+    public void setAutonomy(int autonomy) {
+        this.autonomy = autonomy;
     }
 }
