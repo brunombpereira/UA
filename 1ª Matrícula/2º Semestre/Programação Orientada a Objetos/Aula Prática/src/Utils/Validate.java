@@ -91,4 +91,25 @@ public class Validate {
         }
         return true;
     }
+
+    public static boolean validateProduct(int stock, double price) {
+        if (stock < 0) {
+            System.out.println("O valor do stock tem que ser igual ou maior que 0.");
+            return false;
+        } else if (price <= 0) {
+            System.out.println("O valor do produto tem que ser maior que 0.");
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public static boolean validateDiscount(int discount) {
+        if (discount <= 0) {
+            System.out.println("O desconto tem que ser maior que 0%.");
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
