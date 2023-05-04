@@ -77,4 +77,18 @@ public class Validate {
             return false;
         }
     }
+
+    public static boolean validateAliment(double proteins, double calories, double weight) {
+        if (proteins <= 0) {
+            System.out.println("As proteínas têm que ser superior a 0.");
+            return false;
+        } else if (calories <= 0) {
+            System.out.println("As calorias têm que ser maior que 0.");
+            return false;
+        } else if (weight <= 0) {
+            System.out.println("O peso tem que ser maior que 0.");
+            return false;
+        }
+        return true;
+    }
 }
