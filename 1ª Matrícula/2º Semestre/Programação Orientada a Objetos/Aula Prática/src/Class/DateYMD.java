@@ -1,6 +1,6 @@
 package Class;
 
-public class DateYMD extends Date {
+public class DateYMD extends Date implements Comparable {
     private int year, month, day;
 
     public DateYMD(int year, int month, int day) {
@@ -64,6 +64,23 @@ public class DateYMD extends Date {
             day = 31;
             month = 12;
             year -= 1;
+        }
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        if (o instanceof DateYMD) {
+            DateYMD other = (DateYMD) o;
+
+            if (this.year != other.year) {
+                return this.year - other.year;
+            } else if (this.month != other.month) {
+                return this.month - other.month;
+            } else {
+                return this.day - other.day;
+            }
+        } else {
+            throw new IllegalArgumentException("Incompatible type for comparison");
         }
     }
 }

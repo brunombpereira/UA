@@ -1,6 +1,6 @@
 package Class;
 
-public abstract class Date {
+public abstract class Date implements Comparable{
     public static boolean validateMonth(int month) {
         if (1 <= month && month <= 12) {
             return true;
