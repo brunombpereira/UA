@@ -1,0 +1,11 @@
+# Quartus Output/Cache files
+/**/db/
+/**/incremental_db/
+/**/output_files/*
+!/**/output_files/*.sof
+/**/simulation/
+/**/*.bak
+/**/*.qws
+/**/*.qpf
+/**/*.qsf
+!/**/master.qsf
