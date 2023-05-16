@@ -1,0 +1,39 @@
+Willard:
+
+Score -> 60.3
+Rating -> PG-13
+Genre -> horror
+Running Time -> 100
+The Hulk:
+
+Score -> 61.0
+Rating -> PG-13
+Genre -> action
+Running Time -> 138
+Deliver Us From Eva:
+
+Score -> 61.8
+Rating -> R
+Genre -> comedy
+Running Time -> 105
+The Recruit:
+
+Score -> 62.6
+Rating -> PG-13
+Genre -> suspense
+Running Time -> 115
+The Italian Job:
+
+Score -> 66.5
+Rating -> PG-13
+Genre -> action
+Running Time -> 111
+Intolerable Cruelty:
+
+Score -> 67.1
+Rating -> PG-13
+Genre -> comedy
+Running Time -> 100
+Matchstick Men:
+
+Scor
