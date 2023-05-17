@@ -1,5 +1,6 @@
 import os
 
+
 def printDirFiles(d):
     lst = os.listdir(d)
     for fname in lst:
@@ -14,9 +15,18 @@ def printDirFiles(d):
     return
 
 
-def findFiles(path, ext):
+def findFiles(path, ext) -> list:
     # Complete...
-    ...
+    if not os.path.isdir(path):
+        if ext == path[-len(ext):]:
+            return [path.split('/')[-1][:-len(ext)]]
+        return []
+
+    lst = []
+    for fname in os.listdir(path):
+        d = os.path.join(os.path.abspath(path), fname)
+        lst += findFiles(d, ext)
+    return lst
 
 
 def main():
@@ -31,7 +41,8 @@ def main():
     print("\nTesting findFiles('..', '.csv'):")
     lst = findFiles("..", ".csv")
     print(lst)
+    assert isinstance(lst, list)
+
 
 if __name__ == "__main__":
     main()
-

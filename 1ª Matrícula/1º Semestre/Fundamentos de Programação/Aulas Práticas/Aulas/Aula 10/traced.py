@@ -10,9 +10,10 @@
 # 2017-12-03: Name changed from trace -> traced
 # 2022-12-11: Changed to ASCII characters, for increased portability.
 
-BAR    = "|   "     # "\u2502   " or  "│   "
-ERROR  = "+~> "     
-CORNER = "+-> "     # "\u2514\u2500\u2192 " or  "└─→ "
+BAR = "|   "  # "\u2502   " or  "│   "
+ERROR = "+~> "
+CORNER = "+-> "  # "\u2514\u2500\u2192 " or  "└─→ "
+
 
 def traced(func):
     def tracedfunc(*args, **kwargs):
@@ -22,7 +23,7 @@ def traced(func):
             traced.indent += BAR
             print("{}{}{!r}{!r}".format(indent, func.__name__, args, kwargs))
         try:
-            r = func(*args, **kwargs)   # CALL the func!
+            r = func(*args, **kwargs)  # CALL the func!
             return r
         except Exception as e:
             sep = ERROR
@@ -32,31 +33,32 @@ def traced(func):
             if traced.indent != None:
                 print("{}{}{!r}".format(indent, sep, r))
                 traced.indent = indent  # restore indentation
-    
+
     return tracedfunc
+
 
 # Initial tracing prefix:
 traced.indent = ""
 
 # Uncomment to turn off tracing by default:
-#traced.indent = None
+# traced.indent = None
 
-#traced.indent = traced.__dict__.get("indent")
+# traced.indent = traced.__dict__.get("indent")
 
 
 if __name__ == "__main__":
-
     # How to use this module:
     from traced import traced
-    
+
+
     # You can decorate a function definition
     @traced
     def func(x):
         return x + abs(2 - x)
+
 
     # You can redefine existing functions
     abs = traced(abs)
 
     # Then call the function to see the traced execution
     func(3)
-
