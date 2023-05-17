@@ -10,15 +10,17 @@ def factorial(n):
         i += 1
     return r
 
+
 def factorialB(n):
     r = 1
     for i in range(1, n + 1):
         r = r * i
     return r
 
+
 def main():
     print(factorial(4))
     print(factorialB(3))
 
-main()
 
+main()

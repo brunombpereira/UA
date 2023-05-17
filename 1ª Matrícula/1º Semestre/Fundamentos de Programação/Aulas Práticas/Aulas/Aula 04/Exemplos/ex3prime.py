@@ -4,6 +4,7 @@
 
 import math
 
+
 def isPrime(n):
     r = int(math.sqrt(n) + 0.1)
     # r = n-1  OR  r = n//2  would work, but are less efficient
@@ -11,15 +12,16 @@ def isPrime(n):
     while d <= r:
         if n % d == 0:
             return False
-        d += 1      # we could start at 3 and test only odd divisors...
+        d += 1  # we could start at 3 and test only odd divisors...
     return True
     # isPrime(1) returns True, but should return False!  Fix it!
+
 
 def main():
     # test all numbers from 1 to 39
     for n in range(1, 40):
         print(n, isPrime(n))
 
+
 # call main function:
 main()
-

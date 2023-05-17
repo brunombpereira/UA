@@ -9,4 +9,3 @@ surname = input("Apelido? ")
 course = input("Curso? ")
 
 print("Olá {} {}!\nBem vindo ao curso de X!".format(name, surname))
-

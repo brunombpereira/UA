@@ -26,4 +26,3 @@ for i in range(len(fruits)):
 print("Traversing using enumerate")
 for i, f in enumerate(fruits):
     print(i, f)
-

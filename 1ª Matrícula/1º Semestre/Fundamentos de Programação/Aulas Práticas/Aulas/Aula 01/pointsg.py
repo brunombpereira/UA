@@ -17,4 +17,3 @@ print("Point2:", p2)
 
 # Compute and print the distance between the points!
 # ...
-

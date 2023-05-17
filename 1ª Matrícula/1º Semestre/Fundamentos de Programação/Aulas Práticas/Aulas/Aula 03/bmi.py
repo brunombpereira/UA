@@ -4,7 +4,7 @@
 # given the height (in meter) and weight (in kg) of a person.
 def bodyMassIndex(height, weight):
     # Complete the function definition...
-    bmi = weight / (height**2)
+    bmi = weight / (height ** 2)
     return bmi
 
 
@@ -27,7 +27,7 @@ def bmiCategory(bmi):
 # This is the main function
 def main():
     print("Índice de Massa Corporal")
-    
+
     altura = float(input("Altura (m)? "))
     if altura < 0:
         print("ERRO: altura inválida!")
@@ -48,4 +48,3 @@ def main():
 
 # Program starts executing here
 main()
-
