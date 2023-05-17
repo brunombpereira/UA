@@ -8,7 +8,7 @@ with open("/usr/share/dict/words") as f:
     for line in f:
         word = line.strip()
         lw = len(word)
-        
+
         """
         #A: Check for the key and either assign a new list or append
         if lw not in wordsbylen:
@@ -27,9 +27,8 @@ with open("/usr/share/dict/words") as f:
         lst.append(word)
         """
 
-        #D: Using the setdefault method
+        # D: Using the setdefault method
         wordsbylen.setdefault(lw, []).append(word)
-        
+
 print("Words of length 20:")
 print(wordsbylen[20])
-

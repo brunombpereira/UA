@@ -7,7 +7,7 @@ d = {"as": "the", "os": "the", "e": "and", "praia": "beach"}
 s = input("Texto? ")
 t = ""
 for w in s.split():
-    if w in d:      # check if word w is a key in dictionary d
+    if w in d:  # check if word w is a key in dictionary d
         w = d[w]
     t = t + " " + w
 

@@ -13,9 +13,8 @@ with open("pg3333.txt") as f:
             else:
                 dc[w] = 1
 
-#print(dc["armas"])
-#print(dc["amor"])
+# print(dc["armas"])
+# print(dc["amor"])
 
 for pal, cont in dc.items():
     print(pal, cont)
-
