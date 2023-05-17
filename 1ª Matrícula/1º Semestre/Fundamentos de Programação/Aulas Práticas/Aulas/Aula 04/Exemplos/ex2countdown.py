@@ -11,18 +11,20 @@ def countdownR(n):
     else:
         print("Go!")
 
+
 # Iterative version
 def countdown(n):
     while n > 0:
         print(n)
-        n = n - 1     
+        n = n - 1
     print("Go!")
+
 
 def main():
     # Test both:
     countdownR(5)
     countdown(3)
 
+
 # Call
 main()
-

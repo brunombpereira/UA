@@ -10,12 +10,14 @@ def intOrNone(x):
         r = None
     return r
 
+
 def testIntOrNone():
     # Using assert for testing:
     assert intOrNone("123") == 123
     assert intOrNone("one") == None
     assert intOrNone("1.2") == None
     print("intOrNone passed all tests")
+
 
 # This function works like int(input(.)),
 # but repeats until the user inputs a proper int value.
@@ -25,17 +27,19 @@ def inputInt(prompt):
             x = int(input(prompt))
             break
         except ValueError:
-            print("ERRO! Tem de ser inteiro!" )
+            print("ERRO! Tem de ser inteiro!")
     return x
+
 
 # This function returns True iff s can be converted to a float without error.
 def isFloat(s):
     try:
-        float(s)    # try converting (and discard result)
+        float(s)  # try converting (and discard result)
         r = True
     except ValueError:
         r = False
     return r
+
 
 def testIsFloat():
     # Test isFloat:
@@ -53,17 +57,16 @@ def main():
         s = input("Can you enter a real number? ")
         if isFloat(s): break
         print("Nope! That's not a real number!")
-    x = float(s)        # we're sure this works!
-    print("OK. Here is your number plus 1000:", x+1000)
+    x = float(s)  # we're sure this works!
+    print("OK. Here is your number plus 1000:", x + 1000)
 
 
 # PROG
 age = inputInt("age? ")
 print(age)
 
-#testIntOrNone()
-#testIsFloat()
-#main()
+# testIntOrNone()
+# testIsFloat()
+# main()
 
 print("FIM")
-

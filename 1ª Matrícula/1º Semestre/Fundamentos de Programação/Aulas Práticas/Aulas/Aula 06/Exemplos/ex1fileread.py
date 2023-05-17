@@ -25,4 +25,3 @@ with open("drawing.txt", "r") as f:
         line = line.rstrip()
         print(len(line), line)
 # NO NEED to call close()!
-

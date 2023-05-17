@@ -2,7 +2,7 @@
 # JMR 2019
 
 def isLeapYear(year):
-    return year%4 == 0 and year%100 != 0 or year%400 == 0
+    return year % 4 == 0 and year % 100 != 0 or year % 400 == 0
 
 
 # Print all leap years in range [year1, year2[.
@@ -37,12 +37,13 @@ def listLeapYears(year1, year2):
     return lst
     ## This would be simpler with a list comprehension!
 
+
 ## Can you rewrite the previous functions using for loops (and range function)?
 
 
 # MAIN PROGRAM:
 def main():
-    #printLeapYears(1870, 2020)
+    # printLeapYears(1870, 2020)
 
     x = numLeapYears(1970, 2070)
     print("Between 1970 and 2070 there are", x, "leap years")
@@ -52,4 +53,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

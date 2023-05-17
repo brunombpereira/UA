@@ -7,6 +7,5 @@ def upperList(lst):
 
 
 lst = ["ana", "john", "marie"]
-lst2 =  upperList(lst)
+lst2 = upperList(lst)
 print(lst2)
-

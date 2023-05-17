@@ -11,11 +11,11 @@ lst = [2, 5, -3, 1, -2, 4]
 args = ['apple', 'dell', 'ibm', 'hp', 'sun']
 
 # We can define dictionaries by comprehension:
-{ x:len(x) for x in args }
-    # Do you see how the syntax differs from a list comprehension?
+{x: len(x) for x in args}
+# Do you see how the syntax differs from a list comprehension?
 
 # Another example:
-{ (a,b):c for a in range(1,20)
-          for b in range(a+1,20)
-          for c in range(b+1,a+b)
-          if a**2+b**2==c**2 }
+{(a, b): c for a in range(1, 20)
+ for b in range(a + 1, 20)
+ for c in range(b + 1, a + b)
+ if a ** 2 + b ** 2 == c ** 2}

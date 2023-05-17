@@ -9,6 +9,7 @@ def inputNFloats(prompt, N):
         l.append(r)
     return l
 
+
 # Read numbers until a sentinel string and return them in a list.
 # (The sentinel is an optional parameter.)
 def inputFloats(prompt, sentinel=""):
@@ -30,11 +31,10 @@ def up(lst):
 
 # Test the functions:
 
-#temp = inputNFloats("temperatura? ", 3)
-#print(max(temp))
+# temp = inputNFloats("temperatura? ", 3)
+# print(max(temp))
 
 l = inputNFloats("valor? ", 4)
 print(l)
 up(l)
 print(l)
-

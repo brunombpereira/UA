@@ -1,5 +1,3 @@
-import math
-
 ctp = float(input('Qual a nota de CTP? '))
 cp = float(input('Qual a nota de CP? '))
 

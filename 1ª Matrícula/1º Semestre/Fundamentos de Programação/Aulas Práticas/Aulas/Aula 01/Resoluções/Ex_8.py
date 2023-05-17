@@ -8,4 +8,5 @@ total_imp = imp * pc
 
 total_books = int(input('Quantos livros foram vendidos? '))
 
-print(f'Sendo que foram vendidos {total_books} livros houve um lucro de {profit * total_books :.2f}€ e um total de {total_imp * total_books :.2f}€ em impostos.')
+print(
+    f'Sendo que foram vendidos {total_books} livros houve um lucro de {profit * total_books :.2f}€ e um total de {total_imp * total_books :.2f}€ em impostos.')

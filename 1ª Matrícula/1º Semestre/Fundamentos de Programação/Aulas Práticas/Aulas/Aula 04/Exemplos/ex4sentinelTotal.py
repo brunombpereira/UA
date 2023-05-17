@@ -10,16 +10,17 @@ def inputTotal():
     tot = 0.0
     while True:
         s = input("valor? ")
-        if s == "": break   # if empty line, stop repeating!
+        if s == "": break  # if empty line, stop repeating!
         v = float(s)
         tot = tot + v
     return tot
+
 
 # MAIN PROGRAM
 def main():
     tot = inputTotal()
     print(tot)
 
+
 if __name__ == "__main__":
     main()
-

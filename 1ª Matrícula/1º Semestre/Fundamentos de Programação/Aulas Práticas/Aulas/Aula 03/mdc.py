@@ -9,11 +9,11 @@ def mdc(a, b):
 
 
 def main():
-    print(mdc(10, 5))    # 5
-    print(mdc(10, 3))    # 1
-    print(mdc(10, 2))    # 2
-    print(mdc(10, 1))    # 1
-    print(mdc(15, 3))    # 3
+    print(mdc(10, 5))  # 5
+    print(mdc(10, 3))  # 1
+    print(mdc(10, 2))  # 2
+    print(mdc(10, 1))  # 1
+    print(mdc(15, 3))  # 3
 
     x1 = int(input("x1: "))
     y1 = int(input("y1: "))

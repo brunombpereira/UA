@@ -8,7 +8,7 @@ print(idade)
 if idade >= 18:
     res = "OK"
     print("MAIOR")
-else: 
+else:
     res = "KO"
 
 print(res)

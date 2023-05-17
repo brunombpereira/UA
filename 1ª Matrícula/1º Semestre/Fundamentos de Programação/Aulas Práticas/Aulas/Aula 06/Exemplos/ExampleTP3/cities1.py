@@ -8,13 +8,14 @@
 def main():
     ### Read the text file
     stats = loadPopulationFile("cities.txt")
-    
+
     ### sorts the list by city name
     stats.sort()
-    
+
     ### Write the list into a file
     saveDensityFile("cities_new_1.txt")
-    
+
+
 def loadPopulationFile(filename):
     # open the file for reading
     fin = open(filename)
@@ -41,11 +42,10 @@ def loadPopulationFile(filename):
 
         # append a new tuple to the results list
         stats.append((city, areaKm2, pop2011_km2, pop2018_km2))
-        
-    # do not forget to close the file after reading all lines
-    fin.close() 
-    return stats
 
+    # do not forget to close the file after reading all lines
+    fin.close()
+    return stats
 
 
 def saveDensityFile(filename):

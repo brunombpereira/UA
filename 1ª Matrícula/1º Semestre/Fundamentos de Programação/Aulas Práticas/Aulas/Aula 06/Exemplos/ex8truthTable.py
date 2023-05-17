@@ -12,10 +12,9 @@ vals = [False, True]
 
 with open("truthTable.csv", "w") as f:
     print("A", "B", "C", "A and B or C", sep="\t", file=f)
-    #f.write("{}\t{}\t{}\t{}\n".format("A", "B", "C", "A ^ B v C"))
+    # f.write("{}\t{}\t{}\t{}\n".format("A", "B", "C", "A ^ B v C"))
     for A in vals:
         for B in vals:
             for C in vals:
                 print(A, B, C, A and B or C, sep="\t", file=f)
-                #f.write("{}\t{}\t{}\t{}\n".format(A, B, C, A and B or C)) 
-
+                # f.write("{}\t{}\t{}\t{}\n".format(A, B, C, A and B or C))
