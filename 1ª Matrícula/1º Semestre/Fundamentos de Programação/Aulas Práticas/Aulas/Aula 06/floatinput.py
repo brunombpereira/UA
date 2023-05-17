@@ -1,8 +1,17 @@
 import math
 
-def floatInput(prompt):
-    res = float(input(prompt))
-    return res
+
+def floatInput(prompt, min=-math.inf, max=math.inf):
+    assert min < max, 'ERROR: O valor mínimo é superior ao máximo!'
+    try:
+        res = float(input(prompt))
+        if (res < min) or (res > max):
+            print(f"ERROR: Value should be in [{min}, {max}]!")
+            floatInput(prompt, min, max)
+        return res
+    except ValueError:
+        print("ERROR: Not a float!")
+        floatInput(prompt)
 
 
 def main():
@@ -22,6 +31,7 @@ def main():
     # impossible = floatInput("Value in [3, 0]? ", min=3, max=0)
 
     return
+
 
 if __name__ == "__main__":
     main()

@@ -8,13 +8,14 @@
 import os
 import sys
 
+
 # (from example 3)
 def listDirSizes(dname):
     lst = os.listdir(dname)
     for name in lst:
         # path = dir + "/" + name   	# not ideal...
-        path = os.path.join(dname, name)	# this is better
-        st = os.stat(path)		# get metadata about this path
+        path = os.path.join(dname, name)  # this is better
+        st = os.stat(path)  # get metadata about this path
         print(name, path, st.st_size)
 
 
@@ -30,8 +31,8 @@ def main():
         except FileNotFoundError:
             print("Not found:", dname, file=sys.stderr)
         except NotADirectoryError:
-            print("Not a directory:", dname, file=sys.stderr)    
+            print("Not a directory:", dname, file=sys.stderr)
         print()
 
-main()
 
+main()

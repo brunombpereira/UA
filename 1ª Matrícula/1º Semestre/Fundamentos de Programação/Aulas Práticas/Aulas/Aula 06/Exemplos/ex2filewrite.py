@@ -19,8 +19,7 @@ f.close()   # REMEMBER to close!
 
 with open("drawing.txt") as f, open("points.txt", "w") as f2:
     for line in f:
-        line = line.strip() # remove whitespace from the both ends
+        line = line.strip()  # remove whitespace from the both ends
         if line.isalpha():
-            print(line, file=f2)  #EQUIV: f2.write(line + "\n")
+            print(line, file=f2)  # EQUIV: f2.write(line + "\n")
 # NO NEED to call close()!
-
