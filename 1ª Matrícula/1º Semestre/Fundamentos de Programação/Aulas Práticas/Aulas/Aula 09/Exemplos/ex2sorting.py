@@ -13,8 +13,8 @@ sorted(L, reverse=True)
 
 # Sort by length:
 sorted(L, key=len)
-    # sorted applies the function `len` to each element in L,
-    # then sorts according to the result!
+# sorted applies the function `len` to each element in L,
+# then sorts according to the result!
 
 # Case-insensitive sort:
 sorted(L, key=str.lower)  # key=str.casefold is even better
@@ -30,45 +30,45 @@ str.lower("Maria") == "maria"
 def byLenThenLex(s):
     return (len(s), s)
 
+
 # Test:
 byLenThenLex("Mario") == (5, "Mario")
 byLenThenLex("Maria") == (5, "Maria")
 
 sorted(L, key=byLenThenLex)
 
-
-
 D = [(1910, 10, 5, 'Republic'),
-    (1, 12, 25, 'Christmas'),
-    (1974, 4, 25, 'Liberty'),
-    (1640, 12, 1, 'Restoration')]
+     (1, 12, 25, 'Christmas'),
+     (1974, 4, 25, 'Liberty'),
+     (1640, 12, 1, 'Restoration')]
 
 # Lexicographic tuple sort:
 sorted(D)
 
+
 # Sort D by name of Holiday:
 def getName(t):
-    return t[-1]     # name is last field of tuple
+    return t[-1]  # name is last field of tuple
+
 
 sorted(D, key=getName)
+
 
 # Sort D by (month,day), ignoring year:
 def getMonthDay(t):
     return t[1:3]
 
-sorted(D, key=getMonthDay)
 
+sorted(D, key=getMonthDay)
 
 # Instead of defining small functions to use just once,
 # we can create an anonymous function with a lambda expression and pass it on.
 
 # Sort D by name of Holiday:
-sorted(D, key= (lambda t: t[-1]) )
+sorted(D, key=(lambda t: t[-1]))
 
 # Sort D by (month,day), ignoring year:
-sorted(D, key=lambda t: t[1:3] )
-
+sorted(D, key=lambda t: t[1:3])
 
 # Sort L by length, then case-insensitive:
-sorted(L, key=lambda s: (len(s), s.lower()) )
-
+sorted(L, key=lambda s: (len(s), s.lower()))
