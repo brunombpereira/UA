@@ -5,8 +5,8 @@
 * Sobre list comprehensions e expressões geradoras: [1] sec. 10.22
 * Ou [2] cap. 19 até 19.4
 * Sobre conjuntos (sets) sugere-se a consulta da
-[secção apropriada](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
-da [Python library reference](https://docs.python.org/3/library/index.html).
+  [secção apropriada](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
+  da [Python library reference](https://docs.python.org/3/library/index.html).
 
 [py4e] [Python for Everybody: Interactive](https://elearning.ua.pt/mod/lti/view.php?id=1137743)
 
