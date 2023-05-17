@@ -10,4 +10,3 @@ x2 = float(input("number? "))
 mx = max(x1, x2)
 
 print("Maximum:", mx)
-

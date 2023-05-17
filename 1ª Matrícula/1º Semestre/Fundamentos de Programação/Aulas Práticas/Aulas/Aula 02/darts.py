@@ -1,18 +1,33 @@
-# You throw a dart that hits coordinates (x, y) on a dartboard.
-# Create a program that gives you the score.
-# See:
-#   https://en.wikipedia.org/wiki/Darts#Dartboard
-#   https://www.dimensions.com/element/dartboard
+import math
 
-print("Enter the coordinates in mm from the center of the board.")
-x = float(input("x? "))
-y = float(input("y? "))
+POINTS = (6, 13, 4, 18, 1, 20, 5, 12, 9, 14, 11, 8, 16, 7, 19, 3, 17, 2, 15, 10)
 
-# Points of the sectors, clockwise from the top
-# Example: the sector right from the center is POINTS[5] == 6.
-POINTS = (20, 1, 18, 4, 13, 6, 10, 15, 2, 17, 3, 19, 7, 16, 8, 11, 14, 9, 12, 5)
+print(
+    "Introduza as coordenadas (x, y) do dardo.\nRepresenta as posicoes horizontal e vertical respetivamente.\nAmbas em milimetros.")
 
-# COMPLETE...
+x = int(input('X: '))
+y = int(input('Y: '))
 
+mod = math.sqrt(x ** 2 + y ** 2)
 
-print(score)
+if mod > 170:
+    print('Fora do alvo.')
+    exit(1)
+if mod < 12.7:
+    print('Pontuacao: 50 pontos.')
+    exit(1)
+elif mod < 32:
+    print('Pontuacao: 25 pontos.')
+    exit(1)
+
+angleRad = math.atan2(y, x)
+angleDeg = math.degrees(angleRad) - 9
+score = POINTS[int(angleDeg / 20)]
+
+if 99 < mod < 107:
+    score *= 3
+if mod > 162:
+    score *= 2
+
+print(f'Pontuacao: {score} pontos.')
+exit(1)

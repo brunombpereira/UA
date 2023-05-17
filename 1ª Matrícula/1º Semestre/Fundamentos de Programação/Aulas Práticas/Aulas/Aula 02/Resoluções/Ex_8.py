@@ -18,9 +18,9 @@ P = int(input("Pressure (kPa)? "))
 m = 50 / 400
 
 # Determine the phase. (This is wrong. Fix to match the phase diagram.)
-if((P < (m * T) and T < 400) or (T > 400 and P < 50)):
+if ((P < (m * T) and T < 400) or (T > 400 and P < 50)):
     phase = "GAS"
-elif(T > 400.0 and P > 50):
+elif (T > 400.0 and P > 50):
     phase = "LIQUID"
 else:
     phase = "SOLID"

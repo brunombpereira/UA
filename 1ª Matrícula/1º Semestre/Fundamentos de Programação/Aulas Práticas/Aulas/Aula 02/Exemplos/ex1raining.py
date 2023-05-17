@@ -4,7 +4,7 @@ response = input("Is it raining? ")
 isRaining = response == "yes"
 print(isRaining)
 
-if isRaining :
+if isRaining:
     whatToDo = "take an umbrella"
     print("too bad!")
 else:
@@ -12,4 +12,3 @@ else:
     print("good!")
 
 print(whatToDo)
-

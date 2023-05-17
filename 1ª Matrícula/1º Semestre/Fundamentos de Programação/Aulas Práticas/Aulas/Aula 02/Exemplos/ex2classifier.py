@@ -2,7 +2,7 @@
 
 x = float(input("Altura (m)? "))
 
-#print(x)
+# print(x)
 
 if x > 1.9:
     cl = "alto"
@@ -15,4 +15,3 @@ print("És", cl)
 
 # One specific value of X is wrongly classified in the program.  Can you spot it?
 # What kind of error is this?  Syntax error?  Runtime error?  Semantic error?
-
