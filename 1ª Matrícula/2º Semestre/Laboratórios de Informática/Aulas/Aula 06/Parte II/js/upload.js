@@ -30,22 +30,16 @@ function uploadImage() {
 }
 
 function sendFile(file) {
-	var data = new FormData();
-	data.append("myFile", file);
-
-
-	//Obtain nameImg and authorImg and fill the form
-	var name = ""
-	
-	var author = ""
-
-	if (name == "" || author == "") alert("Missing name and/or author!");
-	else {
-		var xhr = new XMLHttpRequest();
-		xhr.open("POST", "/upload");
-		xhr.upload.addEventListener("progress", updateProgress(this), false);
-		xhr.send(data);
-	}
+	// Create a FormData object
+	var formData = new FormData();
+	formData.append("file", file);
+	var xhr = new XMLHttpRequest();
+	xhr.upload.addEventListener("progress", updateProgress, false);
+	xhr.addEventListener("load", transferComplete, false);
+	xhr.addEventListener("error", transferFailed, false);
+	xhr.addEventListener("abort", transferCanceled, false);
+	xhr.open("POST", "upload.php");
+	xhr.send(formData);
 }
 
 function updateProgress(evt){
