@@ -1,0 +1,2 @@
+set pcname TestServer
+ip 208.186.10.1 208.186.10.62 26

@@ -1,0 +1,107 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "arqredes.pt" in{
+        type master;
+        file "/etc/bind/db.arqredes.pt";
+};
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+"/etc/bind/named.conf.local" 12L, 239C                                                                                                                                      1,1           All
+
+
+
+
+$TTL 604800
+$ORIGIN arqredes.pt.
+@       IN      SOA     ns1.arqredes.pt. adm.arqredes.pt. (
+                        2
+                        604800
+                        86400
+                        2419200
+                        604800)
+        IN      NS      ns1.arqredes.pt.
+ns1     IN      A       208.186.10.2
+@       IN      A       208.186.10.2
+www     IN      A       208.186.10.2
+gr8     IN      A       208.186.10.2
+newnet  IN      A       208.186.10.2
+www.gr8 IN      A       208.186.10.2
+www.newnet      IN      A       208.186.10.2
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+~                                                                                                                                                                                             
+"/etc/bind/db.arqredes.pt" 16L, 314C                                                                                                                                        1,1           All
+
+
+
+
+labcom@LabComServer:/var/www/html$ ls -l
+total 12
+drwxr-xr-x 2 root root 4096 Dec 17 14:13 arqredes.pt-80
+drwxr-xr-x 2 root root 4096 Dec 17 14:15 gr8.pt-80
+drwxr-xr-x 2 root root 4096 Dec 17 14:17 newnet.pt-80
+labcom@LabComServer:/var/www/html$ 
+
