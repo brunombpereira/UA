@@ -1,0 +1,22 @@
+TPC5 - entrega até 21/Março, 21:30
+
+Para a realização deste TPC é fundamental:
+ a) ter completado o guião n.º 4
+ a) ler e compreender a introdução do guião n.º 5
+ b) realizar o exercício 1 do guião n.º 5
+
+A partir do programa fornecido que desenha (com caracteres) sucessivos quadrados no ecrâ:
+1) usar o potenciómetro para definir (através do conversor A/D) a frequência de escrita 
+   dos caracteres. Para isso a gama de valores da ADC deve ser dividida em 5 níveis, 
+   a que devem corresponder as seguintes frequências: 2Hz, 4Hz, 8Hz, 16Hz, 32Hz
+2) o nível atual (entre 1 e 5) deve ser mostrado em binário nos 3 LEDs ligados aos portos
+   RE3, RE2 e RE1
+3) o LED ligado ao porto RE0 deve mudar de estado a cada nova escrita de um carater
+4) nos displays deve ser mostrado:
+   a) se o porto RB0 estiver a 0, o nível (1 a 5)
+   b) se o porto RB0 estiver a 1, a frequência (2 a 32)
+5) a frequência de refrescamento dos displays deve ser 1kHz
+
+Um único ficheiro (nr_mec.c) 
+Compactar o ficheiro com: tar cvzf nr_mec.tgz nr_mec.c
+

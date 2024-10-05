@@ -1,0 +1,17 @@
+GAS LISTING progII.s 			page 1
+
+
+DEFINED SYMBOLS
+            progII.s:2      *ABS*:000000000000000c resetcoretimer
+            progII.s:3      *ABS*:000000000000bf88 SFR_BASE_HI
+            progII.s:4      *ABS*:000000000000000b readcoretimer
+            progII.s:5      *ABS*:0000000000006100 TRISE
+            progII.s:6      *ABS*:0000000000006120 LATE
+            progII.s:7      *ABS*:0000000000006040 TRISB
+            progII.s:8      *ABS*:0000000000006050 PORTB
+            progII.s:11     .text:0000000000000000 main
+            progII.s:21     .text:0000000000000020 loop
+            progII.s:33     .text:0000000000000048 delay
+            progII.s:36     .text:000000000000005c whr
+
+NO UNDEFINED SYMBOLS

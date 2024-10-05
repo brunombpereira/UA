@@ -1,0 +1,13 @@
+GAS LISTING 3b.s 			page 1
+
+
+DEFINED SYMBOLS
+                3b.s:2      *ABS*:000000000000bf88 SFR_BASE_HI
+                3b.s:3      *ABS*:0000000000006100 TRISE
+                3b.s:4      *ABS*:00000000000060c0 TRISD
+                3b.s:5      *ABS*:00000000000060d0 PORTD
+                3b.s:6      *ABS*:0000000000006120 LATE
+                3b.s:10     .text:0000000000000000 main
+                3b.s:19     .text:000000000000001c while
+
+NO UNDEFINED SYMBOLS

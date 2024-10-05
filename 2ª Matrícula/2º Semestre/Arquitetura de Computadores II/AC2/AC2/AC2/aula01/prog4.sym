@@ -1,0 +1,19 @@
+GAS LISTING prog4.s 			page 1
+
+
+DEFINED SYMBOLS
+             prog4.s:2      *ABS*:0000000000000008 printstr
+             prog4.s:3      *ABS*:0000000000000006 printint
+             prog4.s:4      *ABS*:0000000000000007 printint10
+             prog4.s:5      *ABS*:0000000000000005 readint10
+             prog4.s:6      .data:0000000000000000 msg
+             prog4.s:7      .data:0000000000000029 msg2
+             prog4.s:8      .data:0000000000000046 msg4
+             prog4.s:9      .data:0000000000000059 msg5
+             prog4.s:10     .data:000000000000006d msg6
+             prog4.s:11     .data:000000000000008b msg7
+             prog4.s:14     .text:0000000000000000 main
+             prog4.s:15     .text:0000000000000004 while
+             prog4.s:65     .text:00000000000000d4 endw
+
+NO UNDEFINED SYMBOLS

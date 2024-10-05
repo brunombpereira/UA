@@ -1,0 +1,14 @@
+GAS LISTING prog2.s 			page 1
+
+
+DEFINED SYMBOLS
+             prog2.s:2      *ABS*:000000000000000c resetcoretimer
+             prog2.s:3      *ABS*:0000000000000006 printint
+             prog2.s:4      *ABS*:0000000000000003 putchar
+             prog2.s:5      *ABS*:000000000000000b readcoretimer
+             prog2.s:9      .text:0000000000000000 main
+             prog2.s:18     .text:0000000000000020 while
+             prog2.s:43     .text:000000000000006c delay
+             prog2.s:46     .text:0000000000000080 whr
+
+NO UNDEFINED SYMBOLS
