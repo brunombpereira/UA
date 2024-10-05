@@ -1,0 +1,71 @@
+Classes:
+
+Classe Obras:
+    - Autor (String)
+    - Título (String)
+    - Ano (int)
+    - Nº de Exemplares (int)
+
+Classe Autores:
+    - Nome (String)
+    - Ano de Nascimento (int)
+
+Classe Exemplar:
+    - Cota (int)
+    - Código de Barras (int)
+
+Classe Utilizadores:
+    - Número Mecanográfico: alfanumérico (novo tipo maybe)
+
+SubClasse Aluno:
+    - Tempo de Empréstimo: 15 (static) (int)
+
+SubClasse Professor:
+    - Tempo de Empréstimo: 90 (static) (int)
+
+SubClasse Externos:
+    - Tempo de Empréstimo: 30 (static) (int)
+
+Classe Polo:
+    - Nome (String)
+    - Início horário: Date (novo tipo)
+    - Fim horário: Date (novo tipo)
+
+
+Operações:
+
+-> Pesquisar obras:
+    - autor
+    - título
+    - ano
+    - autor + título
+    - autor + ano
+    - título + ano
+    - autor + título + ano
+
+-> Levantamento de exemplares/livros (em regime de empréstimo)
+
+-> Devoluções (a tempo ou tardias)
+
+-> Inscrição de um utilizador externo:
+    - Confirmar identidade (apresentação de uma fatura, titulada ao utilizador, do fornecimento
+de eletricidade, água ou serviço similar)
+    - Confirmar morada (apresentação de uma fatura, titulada ao utilizador, do fornecimento
+de eletricidade, água ou serviço similar)
+
+-> Reserva de obras (para utilização numa data
+futura):
+    - Atribuído o primeiro exemplar disponível
+
+
+Associações:
+
+-> * Obras ---- * Autores
+
+-> 1 Utilizador --pesquisa---- * obras (como):
+
+-> 1 livro/Exemplar --classificado em-- * assuntos/descritores
+
+-> * Obras --ser levantadas-- * utilizadores (em regime de empréstimo)
+
+-> * multas ---- devoluções tardias

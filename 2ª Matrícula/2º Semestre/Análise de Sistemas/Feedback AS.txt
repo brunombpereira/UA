@@ -1,0 +1,22 @@
+Em que parte um sistema IT contribui? - checked
+
+Na parte das referências e fontes se estão referências em concreto ou uma descrição do processo ou de intenções no processo? - checked
+
+Esta identificado o problema que exige a adaptação? - checked
+
+Se é claro o que vai ser feito? - checked
+
+Estão claras as funcionalidades? - checked
+
+Se o produto implica uma IT? - checked
+
+Tá claro como o produto melhora a eficiência da empresa? - checked
+
+Se é consistente? - checked
+
+Se é minimamente concreto e consistente, mesmo que o cenário não exista? - cheked
+
+É claro como a solução IT vai ter impacto em resolver problemas na transformação digital? - checked
+
+São claras as features/funcionalidades do sistema? - cheked
+
