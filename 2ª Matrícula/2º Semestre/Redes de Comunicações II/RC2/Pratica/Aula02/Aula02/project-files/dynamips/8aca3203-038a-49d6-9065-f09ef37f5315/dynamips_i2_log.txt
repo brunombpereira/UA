@@ -1,0 +1,22 @@
+Mar 11 14:21:47.864 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 11 14:21:47.864 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53986.
+Mar 11 14:21:47.866 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 11 14:21:47.866 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Bruno\Desktop\RC2\Pratica\Aula02\Aula02\project-files\dynamips 
+Mar 11 14:21:47.866 GENERAL: working_dir=C:\Users\Bruno\Desktop\RC2\Pratica\Aula02\Aula02\project-files\dynamips
+Mar 11 14:21:47.866 HYPERVISOR: exec_cmd: ethsw create SW2 
+Mar 11 14:21:48.643 HYPERVISOR: exec_cmd: nio create_udp udp-259e6a8a-22de-4134-ba56-dac1b2e0f335 20007 127.0.0.1 20006 
+Mar 11 14:21:48.643 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-259e6a8a-22de-4134-ba56-dac1b2e0f335 
+Mar 11 14:21:48.657 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-259e6a8a-22de-4134-ba56-dac1b2e0f335 1 
+Mar 11 14:21:49.087 HYPERVISOR: exec_cmd: nio create_udp udp-96a7d85e-7b86-469d-8e51-3bc60c6c0e70 20012 127.0.0.1 20013 
+Mar 11 14:21:49.087 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-96a7d85e-7b86-469d-8e51-3bc60c6c0e70 
+Mar 11 14:21:49.114 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW2 udp-96a7d85e-7b86-469d-8e51-3bc60c6c0e70 1 
+Mar 11 14:22:15.757 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-259e6a8a-22de-4134-ba56-dac1b2e0f335 1 
+Mar 11 14:22:15.760 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW2 udp-96a7d85e-7b86-469d-8e51-3bc60c6c0e70 1 
+Mar 11 14:49:22.250 HYPERVISOR: exec_cmd: ethsw remove_nio SW2 udp-259e6a8a-22de-4134-ba56-dac1b2e0f335 
+Mar 11 14:49:22.273 HYPERVISOR: exec_cmd: nio delete udp-259e6a8a-22de-4134-ba56-dac1b2e0f335 
+Mar 11 14:49:22.290 HYPERVISOR: exec_cmd: ethsw remove_nio SW2 udp-96a7d85e-7b86-469d-8e51-3bc60c6c0e70 
+Mar 11 14:49:22.304 HYPERVISOR: exec_cmd: nio delete udp-96a7d85e-7b86-469d-8e51-3bc60c6c0e70 
+Mar 11 14:49:22.324 HYPERVISOR: exec_cmd: ethsw delete SW2 
+Mar 11 14:49:22.326 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 11 14:49:22.627 HYPERVISOR: Stopped.
+Mar 11 14:49:22.627 GENERAL: reset done.

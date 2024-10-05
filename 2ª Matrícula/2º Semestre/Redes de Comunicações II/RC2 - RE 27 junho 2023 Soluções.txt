@@ -1,0 +1,45 @@
+RC2 - RE 27 junho 2023:
+1- Como é que transformo uma VLAN end-to-end em duas locais? Temos de a separar. Tirar permissão (trunk) de transporte para ser local. As redes IPs têm de passar a ser distintas, fazer subnetting (se quisermos fazer o contrário, duas locais para uma end-to-end, juntá-las com uma máscara maior). Dar números diferentes às VLANs
+
+2- Há Spanning Tree? 
+Como é que vcs garantem que o seitch L3 vai ser a raiz? Pq este tem maior capacidade e minimizam os caminhos mais comum ao tráfego.
+Baixar a prioridade para ser escolhido.
+
+3- (Router 7 encima à direita)
+Rotas de omissão: normalmente as pessoas dizem 2, neste caso até funcionava, mas cuidado, depende dos next-hops (R5 e R6) e não dos ISP1 ou ISP2. Então é 2, se não estivesse o R6 seria só 1 por exemplo.
+
+Se fosse do tipo E1 (n o default), as de baixo (ISPs) chegavam lá com custo 104 como passa por 4 interfaces de saída, fica custo 100+1+1+1+1 = 104. Se fosse E2 era custo 102.
+
+4- (O R2 passa a ter preferência)
+Há duas soluções:
+-Com o E2 pode-se atribuir diferentes custos da métrica base, pôr custo 100 na porta do R3 que liga ao R1 e pôr custo 90 na porta do R3 que liga ao R2. Fazer isto também no R4 de forma a dar preferência ao R2.
+
+5- Agora já não é rotas de omissão.
+Do C1 dar menos preferência ao R4, temos de aumentar os custos de C1 para R4, de forma a que R3 tenha sempre preferência. 
+
+6- Ir para a Amazon mas através da Microsoft.
+Tdo o que é forçar um caminho de tráfego que passe por certo sítio é criar um Tunnel e definir as políticas. Fazer um Tunnel duma origem específica para deatino específico, encaminhamento com base em políticas
+
+7- Preferencialmente->aumentar a preferencia local.
+Nunca encaminhar,
+Quando diz que não quer ->bloquear os anuncios e este não entra na tabela de encaminhamento.
+ a) para ele ser de transito para os 2, quer dizer que ele anuncia tdo, manda tdo, as redes próprias e as que lhe anunciam todas.
+
+b) Para eate conjunto de redes específicas, aumenta-se a preferência local.
+Ou ao contrário, baixar a preferência de todas as outras.
+Aumentar a preferência relativa.
+
+c) Usar uma base de dados para ver quais AS correspondem aos que procuramos e Vamos ao PATH, ver qual o último à direita e ver se esse AS corresponde a um da África do Sul.
+Se qqlr um dos números do AS-PATH corresponde a um Sírio, deitar fora esse UPDATE, ignorá-lo de forma a não entrar na tabela de encaminhamento.
+
+
+8- MPLS. Label Switch Path (só para ter labels) com restrições, isto para implementar o Tunnel.
+OSPF (eate diz te que redes e routers existem) é preciso extensões para ver quais são os routers qhe suportam MPLS e quais as capacidades dos mesmos.
+
+RSPPT porque garantem os caminhos...
+
+
+
+
+9- Mudar os IPs e os serviços têm nomes -> re-configurar o DNS.
+NAPRT e SRV (definem o serviço, o protocolo e o porto de forma a que os serviços do nosso servidor, possam chegar ao nosso servidor)

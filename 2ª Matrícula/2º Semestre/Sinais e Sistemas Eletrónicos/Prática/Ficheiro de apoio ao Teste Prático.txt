@@ -1,0 +1,18 @@
+Cinco resistências que se identificam através do Código de Cores:
+
+330 Ohm – laranja, laranja, castanho
+680 Ohm – azul, cinzento, castanho
+1 kOhm   – castanho, preto, vermelho
+10 kOhm  – castanho, preto, laranja
+1 MOhm   – castanho, preto, verde
+
+
+Medição de correntes com o múltimetro:
+
+1) Abrir o ramo do circuito onde se pretende abrir a corrente
+
+2) Mudar o comutador do múltimetro para a escala adequada de correntes contínuas
+
+3) Mudar a ficha banana da ponta de prova vermelha ligada na entrada de tensões (marcada com 'V') para uma das entradas de corrente (aquela que está marcada com 'mA/uA')
+
+4) Inserir o multímetro no circuito, tocando com as pontas de prova nos pontos onde o circuito foi aberto (passo 1)
