@@ -51,6 +51,8 @@ int main(void) {
     {
         printf("2 distinct real roots.\nRoot 1: %lf\nRoot 2: %lf\n", root_1, root_2);
     }
+
+    free(pol);
     
     return 0;
 }
