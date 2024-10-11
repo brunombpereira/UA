@@ -10,7 +10,7 @@ static SllNode* list = NULL;
 
 /* ******************************************** */
 
-static void printMenu(void)
+static void printMenu()
 {
     printf("\n"
             "+===============================================+\n"
@@ -42,7 +42,7 @@ void menuChoiceInsert()
     uint32_t nmec;
     printf("Insert nmec: ");
     scanf("%u", &nmec);
-    char name[80];
+    char name[100];
     printf("Insert name: ");
     scanf(" %[^\n]", name);
     list = sllInsert(list, nmec, name);
@@ -132,4 +132,3 @@ int main()
     list = sllDestroy(list);
     return 0;
 }   /* end of main */
-

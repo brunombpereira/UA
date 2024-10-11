@@ -47,7 +47,7 @@ struct SllNode
  *  \param [in] list Pointer to the head of the list to be processed
  *  \return The head of the list after processing
  */
-SllNode* sllDestroy(SllNode *list);
+SllNode* sllDestroy(SllNode* list);
 
 /**
  * \brief Print the list's registers in ascending order of the \c nmec field
@@ -82,7 +82,7 @@ SllNode* sllLoad(SllNode *list, FILE *fin, bool *ok);
  *  \pre !sllExists(list, nmec)
  *  \return The head of the list after processing
  */
-SllNode* sllInsert(SllNode *list, uint32_t nmec, const char *name);
+SllNode* sllInsert(SllNode* list, uint32_t nmec, const char *name);
 
 /**
  * \brief Remove a register from the list
@@ -111,7 +111,7 @@ SllNode* sllRemove(SllNode* list, uint32_t nmec);
  *  \pre sllExists(list, nmec)
  *  \return the corresponding name
  */
-const char *sllGetName(SllNode *list, uint32_t nmec);
+const char *sllGetName(SllNode* list, uint32_t nmec);
 
 /**
  * \brief Check the existence of a register by nmec
