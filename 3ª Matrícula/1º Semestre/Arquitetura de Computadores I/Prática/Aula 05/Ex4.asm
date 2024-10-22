@@ -1,11 +1,10 @@
 # Mapa de Registos
-# aux:         $t0
-# lista[i+1]:  $t2
-# lista[i]:    $t3
+# *p:	       $t1
+# *(p+1):      $t2
+# i:           $t3
 # houve_troca: $t4
-# i:	       $t5
-# lista:       $t6
-# lista + i:   $t7
+# p:	       $t5
+# pUltimo:     $t6
 
 
 	.data
@@ -27,9 +26,10 @@ lista:	.space 40
 	.text
 	.globl main
 main:
-	li $t5,0
+	li $t3,0
+	la $t5,lista
 for:
-	bge $t5,SIZE,do
+	bge $t3,SIZE,endf
 	
 	la $a0,str1
 	li $v0,print_string
@@ -38,53 +38,48 @@ for:
 	li $v0,read_int
 	syscall
 	
-	sll $t7,$t5,2
-	la $t6,lista
-	addu $t7,$t7,$t6
+	sw $v0,0($t5)
 	
-	sw $v0,0($t7)
-	
-	addi $t5,$t5,1
+	addiu $t5,$t5,4
+	addi $t3,$t3,1
 	
 	j for
-	
-do:	
+endf:
+do:
 	li $t4,FALSE
-	li $t5,0
+	la $t5,lista
+	li $t0,SIZE
+	addi $t0,$t0,-1
+	sll $t0,$t0,2
+	addu $t6,$t5,$t0
 for2:
-	bge $t5,9,endf2
+	bge $t5,$t6,endf2
 	
-	la $t6,lista
-	sll $t7,$t5,2
-	addu $t7,$t7,$t6
-	lw $t3,0($t7)
-	lw $t2,4($t7)
+	lw $t1,0($t5)
+	lw $t2,4($t5)
 if:
-	ble $t3,$t2,endif
+	ble $t1,$t2,endif
 	
-	sw $t3,4($t7)
-	sw $t2,0($t7)
+	sw $t1,4($t5)
+	sw $t2,0($t5)
 	
 	li $t4,TRUE
 endif:
-	addi $t5,$t5,1
+	addiu $t5,$t5,4
 	j for2
 endf2:
 	beq $t4,TRUE,do
 endw:
+	li $t3,0
+	la $t5,lista
+	
 	la $a0,str2
 	li $v0,print_string
 	syscall
-	
-	li $t5,0
 for3:
-	bge $t5,SIZE,endf3
+	bge $t3,SIZE,endf3
 	
-	la $t6,lista
-	sll $t7,$t5,2
-	addu $t7,$t7,$t6
-	
-	lw $a0,0($t7)
+	lw $a0,0($t5)
 	li $v0,print_int10
 	syscall
 	
@@ -92,8 +87,8 @@ for3:
 	li $v0,print_string
 	syscall
 	
-	addi $t5,$t5,1
-	
+	addiu $t5,$t5,4
+	addi $t3,$t3,1
 	j for3
 endf3:
 	jr $ra
