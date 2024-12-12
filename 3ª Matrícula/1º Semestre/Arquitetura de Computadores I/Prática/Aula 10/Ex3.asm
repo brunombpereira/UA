@@ -1,11 +1,13 @@
 	.data
 	
 str0:	.asciiz "Média: "
-str1:	.asciiz "Variância: "
-str2:	.asciiz "Desvio padrão: "
+str1:	.asciiz "\nVariância: "
+str2:	.asciiz "\nDesvio padrão: "
 
 zero:	.float 0.0
+k1:	.double 0.0
 result:	.float 1.0
+resd:	.double 1.0
 multi:	.double 0.5
 
 arr:	.space 80
@@ -20,7 +22,7 @@ arr:	.space 80
 	
 average:	
 	addi $t2,$a1,-1
-	la $t0,zero
+	la $t0,k1
 	l.d $f0,0($t0)
 for:
 	blt $t2,0,endf
@@ -80,11 +82,11 @@ sqrt:
 	addiu $sp,$sp,-4
 	sw $ra,0($sp)
 	
-	la $t0,result
+	la $t0,resd
 	l.d $f2,0($t0)
 	l.d $f0,0($t0)
 	li $t0,0
-	la $t1,zero
+	la $t1,k1
 	l.d $f4,0($t1)
 	la $t2,multi
 	l.d $f6,0($t2)
@@ -129,7 +131,7 @@ for2:
 	
 	sll $t1,$t0,3
 	addu $t2,$a0,$t1
-	l.d $f6,0($t1)
+	l.d $f6,0($t2)
 	cvt.s.d $f6,$f6
 	sub.s $f12,$f6,$f2
 	li $a1,2
