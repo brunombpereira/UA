@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "integersqueue.h": "c"
+        "integersqueue.h": "c",
+        "teste_24": "cpp"
     }
 }
